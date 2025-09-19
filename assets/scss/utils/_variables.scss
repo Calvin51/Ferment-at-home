@@ -7,21 +7,33 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+// $gray-100: #f8f9fa !default;
+// $gray-200: #e9ecef !default;
+// $gray-300: #dee2e6 !default;
+// $gray-400: #ced4da !default;
+// $gray-500: #adb5bd !default;
+// $gray-600: #6c757d !default;
+// $gray-700: #495057 !default;
+// $gray-800: #343a40 !default;
+// $gray-900: #212529 !default;
+$gray-50:  #f6f6f6;
+$gray-100: #e7e7e7;
+$gray-200: #d1d1d1;
+$gray-300: #b0b0b0;
+$gray-400: #888888;
+$gray-500: #6d6d6d;
+$gray-600: #5d5d5d;
+$gray-700: #4f4f4f;
+$gray-800: #454545;
+$gray-900: #3d3d3d;
+$gray-950: #121212;
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
 // scss-docs-start gray-colors-map
 $grays: (
+  "50":  $gray-50,
   "100": $gray-100,
   "200": $gray-200,
   "300": $gray-300,
@@ -30,7 +42,8 @@ $grays: (
   "600": $gray-600,
   "700": $gray-700,
   "800": $gray-800,
-  "900": $gray-900
+  "900": $gray-900,
+  "950": $gray-950,
 ) !default;
 // scss-docs-end gray-colors-map
 // fusv-enable
@@ -298,8 +311,32 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+// 主色 $primary:       $blue !default;
+$primary-50:    #fdf4f3;
+$primary-100:   #fce5e4;
+$primary-200:   #f9d2cf;
+$primary-300:   #f4b1ad;
+$primary-400:   #ec847d;
+$primary-500:   #e05b53;
+$primary-600:   #cc3f36;
+$primary-700:   #b0332b;
+$primary-800:   #8e2c26;
+$primary-900:   #762b26;
+$primary-950:   #40120f;
+
+// 第二主色$secondary:     $gray-600 !default;
+$secondary-50:  #fff6ed;
+$secondary-100: #ffead4;
+$secondary-200: #ffd1a9;
+$secondary-300: #ffba84;
+$secondary-400: #fe8439;
+$secondary-500: #fc6113;
+$secondary-600: #ed4709;
+$secondary-700: #c53209;
+$secondary-800: #9c2910;
+$secondary-900: #7e2410;
+$secondary-950: #441006;
+
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -310,8 +347,43 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
+ "primary-50":     $primary-50,
+  "primary-100":    $primary-100,
+  "primary-200":    $primary-200,
+  "primary-300":    $primary-300,
+  "primary-400":    $primary-400,
+  "primary-500":    $primary-500,
+  "primary-600":    $primary-600,
+  "primary-700":    $primary-700,
+  "primary-800":    $primary-800,
+  "primary-900":    $primary-900,
+  "primary-950":    $primary-950,
+  // "primary":        $primary,
+  "secondary-50":     $secondary-50,
+  "secondary-100":    $secondary-100,
+  "secondary-200":    $secondary-200,
+  "secondary-300":    $secondary-300,
+  "secondary-400":    $secondary-400,
+  "secondary-500":    $secondary-500,
+  "secondary-600":    $secondary-600,
+  "secondary-700":    $secondary-700,
+  "secondary-800":    $secondary-800,
+  "secondary-900":    $secondary-900,
+  "secondary-950":    $secondary-950,
+  // "secondary":  $secondary,
+
+  "gray-50":  $gray-50,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+  "gray-950": $gray-950,
+  
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -408,13 +480,26 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
+//間距
 $spacers: (
+  // 0: 0,
+  // 1: $spacer * .25,
+  // 2: $spacer * .5,
+  // 3: $spacer,
+  // 4: $spacer * 1.5,
+  // 5: $spacer * 3,
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25, //4px
+  2: $spacer * .5,  //8px
+  3: $spacer * .75, //12px
+  4: $spacer ,      //16px
+  5: $spacer * 1.5, //24px
+  6: $spacer * 2,   //32px
+  7: $spacer * 2.5, //40px
+  8: $spacer * 3,   //48px
+  9: $spacer * 3.5, //56px
+  10: $spacer * 4,  //64px
+  11: $spacer * 5,  //80px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -603,7 +688,8 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -616,26 +702,40 @@ $font-size-base:              1rem !default; // Assumes the browser default, typ
 $font-size-sm:                $font-size-base * .875 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 
-$font-weight-lighter:         lighter !default;
-$font-weight-light:           300 !default;
+// $font-weight-lighter:         lighter !default;
+// $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
-$font-weight-medium:          500 !default;
-$font-weight-semibold:        600 !default;
-$font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
+// $font-weight-medium:          500 !default;
+$font-weight-bold:            600 !default;
+// $font-weight-bold:            700 !default;
+// $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
 $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
+//字體大小
+// $h1-font-size:                $font-size-base * 2.5 !default;
+// $h2-font-size:                $font-size-base * 2 !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 3.5 !default; //56px
+$h2-font-size:                $font-size-base * 2.5 !default; //40px
+$h3-font-size:                $font-size-base * 2.25 !default;//36px
+$h4-font-size:                $font-size-base * 2 !default;   //32px
+$h5-font-size:                $font-size-base * 1.75 !default;//28px
+$h6-font-size:                $font-size-base *1.5 !default;  //24px
+$h7-font-size:                $font-size-base *1.25 !default; //20px
+$h8-font-size:                $font-size-base *1.125 !default;//18px
+$h9-font-size:                $font-size-base  !default;      //16px
+$h10-font-size:                $font-size-base *.875 !default;//14px
+$h11-font-size:                $font-size-base *.75 !default; //12px
+
+
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -646,6 +746,11 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+  10: $h10-font-size,
+  11: $h11-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
@@ -660,12 +765,14 @@ $headings-color:              inherit !default;
 
 // scss-docs-start display-headings
 $display-font-sizes: (
-  1: 5rem,
-  2: 4.5rem,
-  3: 4rem,
-  4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem
+  1: 3.5rem,
+  2: 2.5rem,
+  // 1: 5rem,
+  // 2: 4.5rem,
+  // 3: 4rem,
+  // 4: 3.5rem,
+  // 5: 3rem,
+  // 6: 2.5rem
 ) !default;
 
 $display-font-family: null !default;
