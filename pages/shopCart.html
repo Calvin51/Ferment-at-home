@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopCart</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+    <main class="shopCart">  
+    <div class="container my-lg-10">
+    <h1 class="text-center mb-lg-4">Shopping Cart</h1>
+
+    <section class="cart d-flex">
+        <ul class="shop-items">
+            <li class="d-flex align-items-center border-bottom gap-5 py-5 px-8">
+                <img src="../assets/images/pizza-hawaii.png" alt="夏威夷披薩" style="width: 160px; height: 160px;">
+                <h7 class="">夏威夷披薩（6寸）</h7>
+                <div class="border border-2 border-primary rounded-pill" style="width: 180px;">
+                <div class="input-group my-2 justify-content-center">
+                    <button class="btn p-3"><img src="../assets/images/minus.svg" alt="少一個"></button>
+                    <input type="text" value="1" class="quantity-input fs-5">
+                    <button class="btn p-3"><img src="../assets/images/plus.svg" alt="多一個"></button>
+                  </div>
+                </div>
+                                 
+                <h5 class="text-primary">NT$260</h5>
+                <img src="../assets/images/trashcan.svg" alt="delet">
+            </li>
+            
+
+        </ul>
+
+    </section>
+
+
+
+
+
+
+
+    </div>  
+    </main>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
