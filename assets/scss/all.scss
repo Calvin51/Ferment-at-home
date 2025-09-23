@@ -15,7 +15,10 @@ $utilities: map-merge(
 
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
+@import './base/base';
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
+@import './pages/products.scss';
