@@ -1,3 +1,41 @@
-.index-title {
-  font-size: 100px;
+.hero-bg {
+  height: 900px;
+  background-image: url("/assets/images/hero_bg.png");
+  background-size: cover;
+}
+
+.banner-container {
+  height: 648px;
+  width: 1296px;
+  overflow: hidden;
+}
+
+.title-position {
+  top: -30px;
+}
+
+.banner-button {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.news-date {
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
+}
+
+.border-dashed {
+  border-bottom: 2px dashed var(--bs-secondary-300);
+}
+
+.news-content {
+  color: var(--bs-gray-950);
+  margin-right: 0;
+
+  transition: margin-right 0.5s;
+
+  &:hover {
+    color: var(--bs-primary);
+    margin-right: 16px;
+  }
 }
