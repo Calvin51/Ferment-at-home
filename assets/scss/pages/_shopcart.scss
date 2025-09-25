@@ -4,4 +4,34 @@
     border: none;     
     outline: none;       
   }
+
+  .popProduct{
+    border-color: transparent;
+  }
   
+  .sizeChoose{
+    border-radius: 1000px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 80.67px;
+  }
+  .shop-btn{
+    padding: 18px;
+  }
+ /* 左邊箭頭 */
+.position-relative .btn-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%); /* 往外偏一半 */
+  z-index: 1;
+}
+
+/* 右邊箭頭 */
+.position-relative .btn-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%); /* 往外偏一半 */
+  z-index: 1;
+}
