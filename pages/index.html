@@ -13,7 +13,13 @@
   <body>
     <%- include('./layout/header'); -%>
     <!-- banner區塊 -->
-    <div class="container-fluid hero-bg position-relative">
+    <div class="container-fluid hero-bg position-relative pt-200 pt-lg-0">
+      <!-- banner標題small -->
+      <img
+        src="/assets/images/index-sm-title.png"
+        alt="材料包都在這裡，去做披薩吧！"
+        class="d-lg-none d-block mx-auto"
+      />
       <!-- banner按鈕 -->
       <a href="./products.html">
         <button
@@ -27,14 +33,14 @@
       <!-- 輪播圖 -->
       <div
         id="carouselExampleAutoplaying"
-        class="carousel slide position-absolute bottom-0 start-50 translate-middle-x"
+        class="carousel slide carousel-fade position-absolute bottom-0 start-50 translate-middle-x"
         data-bs-ride="carousel"
       >
         <!-- banner標題 -->
         <img
           src="/assets/images/index-title.png"
           alt="材料包都在這裡，去做披薩吧！"
-          class="position-absolute title-position start-50 translate-middle-x z-1"
+          class="position-absolute title-position start-50 translate-middle-x z-1 d-lg-block d-none"
         />
         <!-- 輪播圖圖片 -->
         <div class="carousel-inner banner-container">
@@ -145,6 +151,236 @@
             </div>
           </button>
         </a>
+      </div>
+    </section>
+    <!-- 分隔波浪線 -->
+    <div class="d-block w-100 wave-line mt-10 mb-8"></div>
+    <!-- Our story區塊 -->
+    <section class="container pb-10">
+      <div class="text-center">
+        <!-- 標題 -->
+        <div class="mb-8">
+          <h2 class="section-title fs-1 text-primary">Our Story</h2>
+          <img src="/assets/images/line-small.png" alt="" />
+        </div>
+        <!-- 圖片區 -->
+        <div class="story-image mx-auto mb-8">
+          <img
+            src="/assets/images/story-image.png"
+            alt="手作披薩"
+            class="d-block w-100"
+          />
+        </div>
+        <!-- story內容 -->
+        <div class="mb-5">
+          <p class="fs-8 text-gray-950 mb-3">
+            我們相信，生活中的幸福感，往往來自那些「親手完成」的小小時刻。
+          </p>
+          <p class="fs-8 text-gray-950">
+            揉一團麵、等待它在廚房角落慢慢發酵、看著香氣四溢的披薩出爐——這些過程，不只是料理，更是讓人心安的療癒儀式。
+          </p>
+        </div>
+        <div class="mb-5">
+          <p class="fs-8 text-gray-950 mb-3">
+            Ferment at Home
+            誕生於對「動手做」的熱愛，也源自於我們對現代生活節奏的理解。
+          </p>
+          <p class="fs-8 text-gray-950">
+            只要打開一個材料包，就能展開一段從「揉麵、發酵、創作」到「出爐」的完整旅程。
+          </p>
+        </div>
+        <div class="mb-5">
+          <p class="fs-8 text-gray-950 mb-3">
+            我們希望帶來的不僅僅是一餐，而是一種新的生活方式：
+          </p>
+          <p class="fs-8 text-gray-950">
+            在家，也能有派對的熱鬧、陪伴的溫暖，以及創意帶來的樂趣。
+          </p>
+        </div>
+        <div>
+          <p class="fs-8 text-gray-950">
+            無論是一個人、和家人共享，還是邀請朋友們一起動手做，Ferment at Home
+            讓「發酵」成為生活中最簡單、最溫柔的幸福時刻。
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- 披薩四重奏 -->
+    <section class="container-fluid py-6 py-xl-10 bg-secondary rounded-5">
+      <div class="text-center container-xxl">
+        <!-- 標題 -->
+        <div class="mb-8">
+          <h2 class="section-title fs-1 text-primary">Pizza Quartet</h2>
+          <img src="/assets/images/line-small.png" alt="" />
+        </div>
+        <!-- 卡片區塊 -->
+        <div class="row row-gap-4">
+          <!-- 卡片1 -->
+          <div
+            class="col-6 col-lg-3 p-5 position-relative painting-quartetCard-outline"
+          >
+            <div class="mb-2 mb-xl-3">
+              <img
+                src="/assets/images/quartet_1.png"
+                alt="餅皮"
+                class="d-block rounded-circle w-100"
+              />
+            </div>
+            <div>
+              <h3 class="section-title fs-2 text-primary mb-2 mb-lg-3">
+                Dough
+              </h3>
+              <p class="fs-9 fs-md-8">薄脆、厚Q、芝心</p>
+            </div>
+          </div>
+          <!-- 卡片2 -->
+          <div
+            class="col-6 col-lg-3 p-5 position-relative painting-quartetCard-outline"
+          >
+            <div class="mb-2 mb-xl-3">
+              <img
+                src="/assets/images/quartet_2.png"
+                alt="醬汁"
+                class="d-block rounded-circle w-100"
+              />
+            </div>
+            <div>
+              <h3 class="section-title fs-2 text-primary mb-2 mb-lg-3">
+                Sauce
+              </h3>
+              <p class="fs-9 fs-md-8">白醬、茄汁、辣醬、BBQ</p>
+            </div>
+          </div>
+          <!-- 卡片3 -->
+          <div
+            class="col-6 col-lg-3 p-5 position-relative painting-quartetCard-outline"
+          >
+            <div class="mb-2 mb-xl-3">
+              <img
+                src="/assets/images/quartet_3.png"
+                alt="起司"
+                class="d-block rounded-circle w-100"
+              />
+            </div>
+            <div>
+              <h3 class="section-title fs-2 text-primary mb-2 mb-lg-3">
+                Cheese
+              </h3>
+              <p class="fs-9 fs-md-8">莫札瑞拉、切達、帕瑪森</p>
+            </div>
+          </div>
+          <!-- 卡片4 -->
+          <div
+            class="col-6 col-lg-3 p-5 position-relative painting-quartetCard-outline"
+          >
+            <div class="mb-2 mb-xl-3">
+              <img
+                src="/assets/images/quartet_4.png"
+                alt="配料"
+                class="d-block rounded-circle w-100"
+              />
+            </div>
+            <div>
+              <h3 class="section-title fs-2 text-primary mb-2 mb-lg-3">
+                Others
+              </h3>
+              <p class="fs-9 fs-md-8">多樣食材任選</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 披薩流程圖 -->
+    <section class="container-fluid py-6 py-xl-10">
+      <div class="container-xxl">
+        <!-- step-1 -->
+        <div class="container-fluid mb-8">
+          <div class="row">
+            <div class="col-12 col-md-6 text-center position-relative">
+              <div class="rounded-circle bg-primary step-num">
+                <h3 class="section-title fs-2 fs-lg-1 lh-1 text-white">1</h3>
+              </div>
+              <div class="step-one-bg mb-5">
+                <img
+                  src="/assets/images/step-frame.png"
+                  alt=""
+                  class="d-block w-100"
+                />
+              </div>
+              <div>
+                <p class="fs-8 text-gray-950">
+                  將麵團、起司、醬料與新鮮配料一一取出，整齊擺放在餐桌上。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- step-2 -->
+        <div class="container-fluid mb-8">
+          <div class="row">
+            <div class="col-12 col-md-6 text-center position-relative ms-auto">
+              <div class="rounded-circle bg-primary step-num">
+                <h3 class="section-title fs-2 fs-lg-1 lh-1 text-white">2</h3>
+              </div>
+              <div class="step-two-bg mb-5">
+                <img
+                  src="/assets/images/step-frame.png"
+                  alt=""
+                  class="d-block w-100"
+                />
+              </div>
+              <div>
+                <p class="fs-8 text-gray-950">
+                  將麵團放在灑了麵粉的桌面上，用手掌輕壓，再拿起桿麵棍慢慢桿開。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- step-3 -->
+        <div class="container-fluid mb-8">
+          <div class="row">
+            <div class="col-12 col-md-6 text-center position-relative">
+              <div class="rounded-circle bg-primary step-num">
+                <h3 class="section-title fs-2 fs-lg-1 lh-1 text-white">3</h3>
+              </div>
+              <div class="step-three-bg mb-5">
+                <img
+                  src="/assets/images/step-frame.png"
+                  alt=""
+                  class="d-block w-100"
+                />
+              </div>
+              <div>
+                <p class="fs-8 text-gray-950">
+                  在餅皮上抹上特製的醬料，撒上滿滿的起司，再仔細擺上各種食材。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- step-4 -->
+        <div class="container-fluid mb-8">
+          <div class="row">
+            <div class="col-12 col-md-6 text-center position-relative ms-auto">
+              <div class="rounded-circle bg-primary step-num">
+                <h3 class="section-title fs-2 fs-lg-1 lh-1 text-white">4</h3>
+              </div>
+              <div class="step-four-bg mb-5">
+                <img
+                  src="/assets/images/step-frame.png"
+                  alt=""
+                  class="d-block w-100"
+                />
+              </div>
+              <div>
+                <p class="fs-8 text-gray-950">
+                  金黃的披薩在烤箱裡閃著光，香氣撲鼻。將它小心拿出來，準備享用。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

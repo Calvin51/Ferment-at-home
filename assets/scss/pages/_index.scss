@@ -6,7 +6,7 @@
 
 .banner-container {
   height: 648px;
-  width: 1296px;
+  max-width: 1296px;
   overflow: hidden;
 }
 
@@ -37,5 +37,82 @@
   &:hover {
     color: var(--bs-primary);
     margin-right: 16px;
+  }
+}
+
+.wave-line {
+  height: 30px;
+  background-image: url("/assets/images/curved-line.svg");
+}
+
+.story-image {
+  max-width: 856px;
+}
+
+.painting-quartetCard-outline {
+  background-image: url("/assets/images/card_quartet_pc_34.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+@media (max-width: 576px) {
+  .painting-quartetCard-outline {
+    background-image: url("/assets/images/card-border-sm.png");
+  }
+}
+
+.step-one-bg {
+  border-radius: 32px;
+  background-image: url("https://github.com/Fury51/img-base/blob/main/gif/Adobe%20Express%20-%20step_01.gif?raw=true");
+  background-repeat: no-repeat;
+  background-size: 98%;
+  background-position: center center;
+}
+
+.step-two-bg {
+  border-radius: 32px;
+  background-image: url("https://github.com/Fury51/img-base/blob/main/gif/Adobe%20Express%20-%20step_02.gif?raw=true");
+  background-repeat: no-repeat;
+  background-size: 98%;
+  background-position: center center;
+}
+
+.step-three-bg {
+  border-radius: 32px;
+  background-image: url("https://github.com/Fury51/img-base/blob/main/gif/Adobe%20Express%20-%20step_03.gif?raw=true");
+  background-repeat: no-repeat;
+  background-size: 98%;
+  background-position: center center;
+}
+
+.step-four-bg {
+  border-radius: 32px;
+  background-image: url("https://github.com/Fury51/img-base/blob/main/gif/Adobe%20Express%20-%20step_04.gif?raw=true");
+  background-repeat: no-repeat;
+  background-size: 98%;
+  background-position: center center;
+}
+
+.step-num {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 64px;
+  height: 64px;
+}
+
+@media (max-width: 576px) {
+  .step-num {
+    top: -22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .step-num {
+    width: 48px;
+    height: 48px;
   }
 }
