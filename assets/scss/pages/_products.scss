@@ -77,6 +77,9 @@ img {
     text-align: center;
 }
 
+.p-24 {
+    padding: 24px;
+}
 .py-12 {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -92,6 +95,55 @@ img {
     padding-bottom: 64px;
 }
 
+.pb-24 {
+    padding-bottom: 24px;
+}
+
+.pb-48 {
+    padding-bottom: 48px;
+}
+
 .pb-80 {
     padding-bottom: 80px;
+}
+
+.step-circle{
+    color: var(--bs-white);
+    background-color: var(--bs-primary);
+    font-size: 40px;
+    padding: 12px 13.5px 12px 13.5px;
+}
+
+.card-body {
+    background-color: var(--bs-gray-50);
+
+    &:hover{
+        background-color: var(--bs-secondary-100);
+        }
+}
+
+.card-photo {
+    position: relative;
+    width: 258px;
+    height: 258px;
+}
+
+.selling-price {
+    position: absolute;
+    color: var(--bs-primary);
+}
+
+.card-check {
+    position: absolute;
+    right: 0px;
+    padding: 8px;
+    background-color: var(--bs-gray-200);
+
+    &:hover {
+            background-color: var(--bs-gray-200);
+        }
+    
+    &:active {
+        background-color: var(--bs-primary);
+    }
 }
