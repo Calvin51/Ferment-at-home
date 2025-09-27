@@ -9,35 +9,79 @@
 
 <body>
     <%- include('./layout/header'); -%>
-    <div class="container-fluid py-64">
+    <main class="container-fluid py-64">
         <div class="container">
+            <!-- Pick Your Pizza標題 -->
             <div class="text-align-center pb-80">
                 <h1 class="section-title text-primary">Pick Your Pizza</h1>
+                <img src="/assets/images/line-small.png" alt="底線"/>
             </div>
-            <div class="row">
+            <!-- Step1選擇口味 -->
+            <div class="row pb-48">
                 <div class="col-3">
                     <div class="d-flex align-items-center section-title">
                         <h1 class="me-2">Step</h1>
-                        <p class="step-circle">1</p>
+                        <p class="step-circle rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;">1</p>
                     </div>
                 </div>
                 <div class="col-9">
                     <div>
                         <div class="d-flex align-items-center mb-3">
                             <p class="fs-5 fw-bold me-2">選擇口味</p>
-                            <div class="text-gray-300"><i class="bi bi-check"></i></div>
+                            <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg" alt="打勾圖示">
                         </div>
                         <div class="row">
                             <div class="col-4">
-                                <div class="card text-center bg-gray-50 mb-3 rounded-3">
-                                    <div class="card-body">
-                                        <img src="../assets/images/sauce-01.png" alt="青醬">
-                                        <span class="position-absolute top-0 end-0 py-5 me-5">
-                                            <a href="#" class="btn bg-gray-200 text-white text-end"><i class="bi bi-check"></i></a>
-                                            </li>
-                                        </span>
-                                        <h5 class="card-title fw-bold">青醬</h5>
-                                        <p class="card-text">羅勒香氣濃郁，適合海鮮</p>
+                                <div class="card-body text-center p-24 rounded-4">
+                                    <div>
+                                        <div class="card-photo">
+                                            <h2 class="selling-price section-title">+80</h2>
+                                            <div class="card-check rounded-4">
+                                                <a href="#" class="check text-white">
+                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                </a>
+                                                </li>
+                                            </div>
+                                            <img src="../assets/images/sauce-01.png" alt="青醬">
+                                        </div>
+                                        <h5 class="fw-bold mb-2">青醬</h5>
+                                        <p>羅勒香氣濃郁，適合海鮮</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card-body text-center p-24 rounded-4">
+                                    <div>
+                                        <div class="card-photo">
+                                            <h2 class="selling-price section-title">+80</h2>
+                                            <div class="card-check rounded-4">
+                                                <a href="#" class="check text-white">
+                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                </a>
+                                                </li>
+                                            </div>
+                                            <img src="../assets/images/sauce-02.png" alt="白醬">
+                                        </div>
+                                        <h5 class="fw-bold mb-2">白醬</h5>
+                                        <p>奶香溫醇，適合雞肉</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card-body text-center p-24 rounded-4">
+                                    <div>
+                                        <div class="card-photo">
+                                            <h2 class="selling-price section-title">+80</h2>
+                                            <div class="card-check rounded-4">
+                                                <a href="#" class="check text-white">
+                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                </a>
+                                                </li>
+                                            </div>
+                                            <img src="../assets/images/sauce-03.png" alt="青醬">
+                                        </div>
+                                        <h5 class="fw-bold mb-2">紅醬</h5>
+                                        <p>經典蕃茄酸甜，適合所有食材</p>
                                     </div>
                                 </div>
                             </div>
@@ -45,8 +89,222 @@
                     </div>
                 </div>
             </div>
+            <!-- Step2選擇尺寸餅皮起司 -->
+            <div class="row pb-48">
+                <div class="col-3">
+                    <div class="d-flex align-items-center section-title">
+                        <h1 class="me-2">Step</h1>
+                        <p class="step-circle rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:48px;height:48px;">2</p>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div>
+                        <!-- 尺寸 -->
+                        <div class="pb-24">
+                        <div class="d-flex align-items-center mb-3">
+                            <p class="fs-5 fw-bold me-2">選擇尺寸</p>
+                            <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg" alt="打勾圖示">
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card-body text-center p-24 rounded-4">
+                                    <div>
+                                        <div class="card-photo">
+                                            <h2 class="selling-price section-title">+80</h2>
+                                            <div class="card-check rounded-4">
+                                                <a href="#" class="check text-white">
+                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                </a>
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <img src="../assets/images/pizza-inch/pizza-6-inch.png" alt="6寸">
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bold mb-2">6寸</h5>
+                                        <p>適合 1-2 人</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card-body text-center p-24 rounded-4">
+                                    <div>
+                                        <div class="card-photo">
+                                            <h2 class="selling-price section-title">+120</h2>
+                                            <div class="card-check rounded-4">
+                                                <a href="#" class="check text-white">
+                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                </a>
+                                                </li>
+                                            </div>
+                                            <img src="../assets/images/pizza-inch/pizza-8-inch.png" alt="8寸">
+                                        </div>
+                                        <h5 class="fw-bold mb-2">8寸</h5>
+                                        <p>適合 3-4 人</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card-body text-center p-24 rounded-4">
+                                    <div>
+                                        <div class="card-photo">
+                                            <h2 class="selling-price section-title">+150</h2>
+                                            <div class="card-check rounded-4">
+                                                <a href="#" class="check text-white">
+                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                </a>
+                                                </li>
+                                            </div>
+                                            <img src="../assets/images/pizza-inch/pizza-12-inch.png" alt="12寸" height="20px">
+                                        </div>
+                                        <h5 class="fw-bold mb-2">12寸</h5>
+                                        <p>適合 4-6 人</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- 餅皮 -->
+                        <div class="pb-24">
+                            <div class="d-flex align-items-center mb-3">
+                                <p class="fs-5 fw-bold me-2">選擇餅皮</p>
+                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg" alt="打勾圖示">
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="card-body text-center p-24 rounded-4">
+                                        <div>
+                                            <div class="card-photo">
+                                                <h2 class="selling-price section-title">+80</h2>
+                                                <div class="card-check rounded-4">
+                                                    <a href="#" class="check text-white">
+                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                    </a>
+                                                    </li>
+                                                </div>
+                                                <div>
+                                                    <img src="../assets/images/pizza-crust-thin.png" alt="薄脆">
+                                                </div>
+                                            </div>
+                                            <h5 class="fw-bold mb-2">薄脆</h5>
+                                            <p>外酥內嫩</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card-body text-center p-24 rounded-4">
+                                        <div>
+                                            <div class="card-photo">
+                                                <h2 class="selling-price section-title">+120</h2>
+                                                <div class="card-check rounded-4">
+                                                    <a href="#" class="check text-white">
+                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                    </a>
+                                                    </li>
+                                                </div>
+                                                <img src="../assets/images/pizza-crust-thick.png" alt="厚Q">
+                                            </div>
+                                            <h5 class="fw-bold mb-2">厚Q</h5>
+                                            <p>扎實嚼勁</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card-body text-center p-24 rounded-4">
+                                        <div>
+                                            <div class="card-photo">
+                                                <h2 class="selling-price section-title">+150</h2>
+                                                <div class="card-check rounded-4">
+                                                    <a href="#" class="check text-white">
+                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                    </a>
+                                                    </li>
+                                                </div>
+                                                <img src="../assets/images/pizza-crust-stuffed.png" alt="芝心" height="20px">
+                                            </div>
+                                            <h5 class="fw-bold mb-2">芝心</h5>
+                                            <p>香濃牽絲</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 起司 -->
+                        <div>
+                            <div class="d-flex align-items-center mb-3">
+                                <p class="fs-5 fw-bold me-2">選擇起司</p>
+                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg" alt="打勾圖示">
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="card-body text-center p-24 rounded-4">
+                                        <div>
+                                            <div class="card-photo">
+                                                <h2 class="selling-price section-title">+80</h2>
+                                                <div class="card-check rounded-4">
+                                                    <a href="#" class="check text-white">
+                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                    </a>
+                                                    </li>
+                                                </div>
+                                                <div>
+                                                    <img src="../assets/images/cheese-mozzarella.png" alt="莫札瑞拉">
+                                                </div>
+                                            </div>
+                                            <h5 class="fw-bold mb-2">莫札瑞拉</h5>
+                                            <p>經典不敗</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card-body text-center p-24 rounded-4">
+                                        <div>
+                                            <div class="card-photo">
+                                                <h2 class="selling-price section-title">+120</h2>
+                                                <div class="card-check rounded-4">
+                                                    <a href="#" class="check text-white">
+                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                    </a>
+                                                    </li>
+                                                </div>
+                                                <img src="../assets/images/cheese-cheddar.png" alt="切達">
+                                            </div>
+                                            <h5 class="fw-bold mb-2">切達</h5>
+                                            <p>香醇濃郁</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card-body text-center p-24 rounded-4">
+                                        <div>
+                                            <div class="card-photo">
+                                                <h2 class="selling-price section-title">+150</h2>
+                                                <div class="card-check rounded-4">
+                                                    <a href="#" class="check text-white">
+                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                    </a>
+                                                    </li>
+                                                </div>
+                                                <img src="../assets/images/cheese-parmesan.png" alt="帕馬森" height="20px">
+                                            </div>
+                                            <h5 class="fw-bold mb-2">帕馬森</h5>
+                                            <p>鹹香風味</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step3選擇配料組合 -->
+            <div>
+                <a href="./shopCart.html"><button class="btn-filled-primary" style="width: 258px;" type="button">購物車</button></a>
+            </div>
         </div>
-    </div>
+    </main>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
 </body>
