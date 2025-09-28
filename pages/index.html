@@ -9,21 +9,36 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <%- include('./layout/header'); -%>
     <!-- banner區塊 -->
-    <div class="container-fluid hero-bg position-relative pt-200 pt-lg-0">
+    <div
+      class="container-fluid hero-bg position-relative pt-200 pt-lg-252 px-0"
+    >
       <!-- banner標題small -->
       <img
         src="/assets/images/index-sm-title.png"
         alt="材料包都在這裡，去做披薩吧！"
-        class="d-lg-none d-block mx-auto"
+        class="d-lg-none d-block mx-auto mb-5"
       />
       <!-- banner按鈕 -->
       <a href="./products.html">
         <button
-          class="btn-outline-primary px-7 banner-button position-absolute bottom-200 start-50 translate-middle-x z-2"
+          class="btn-outline-primary px-7 banner-button position-absolute bottom-200 start-50 translate-middle-x z-2 d-lg-block d-none"
+          type="button"
+        >
+          開始發酵
+        </button>
+      </a>
+      <!-- banner按鈕small -->
+      <a href="./products.html">
+        <button
+          class="btn-filled-primary px-7 banner-button d-block d-lg-none mx-auto mb-7"
           type="button"
         >
           開始發酵
@@ -33,78 +48,61 @@
       <!-- 輪播圖 -->
       <div
         id="carouselExampleAutoplaying"
-        class="carousel slide carousel-fade position-absolute bottom-0 start-50 translate-middle-x"
+        class="carousel slide carousel-fade position-relative"
         data-bs-ride="carousel"
       >
         <!-- banner標題 -->
         <img
           src="/assets/images/index-title.png"
           alt="材料包都在這裡，去做披薩吧！"
-          class="position-absolute title-position start-50 translate-middle-x z-1 d-lg-block d-none"
+          class="d-lg-block d-none position-absolute banner-title start-50 translate-middle-x"
         />
         <!-- 輪播圖圖片 -->
-        <div class="carousel-inner banner-container">
+        <div class="carousel-inner container-xxl banner-box px-0">
           <div class="carousel-item active">
             <img
               src="/assets/images/pizza-banner-1.png"
-              class="d-block w-100"
+              class="d-block banner-image"
               alt="瑪格麗特"
             />
           </div>
           <div class="carousel-item">
             <img
               src="/assets/images/pizza-banner-2.png"
-              class="d-block w-100"
+              class="d-block banner-image"
               alt="美式臘腸"
             />
           </div>
           <div class="carousel-item">
             <img
               src="/assets/images/pizza-banner-3.png"
-              class="d-block w-100"
+              class="d-block banner-image"
               alt="披薩"
             />
           </div>
         </div>
-        <!-- 換頁按鈕 -->
-        <!-- <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button> -->
       </div>
     </div>
     <!-- 最新消息 -->
-    <section class="container py-10">
+    <section class="container py-6 py-lg-10">
       <div class="text-center">
         <!-- 標題 -->
-        <div class="mb-8">
-          <h2 class="section-title fs-1 text-primary">Latest News</h2>
+        <div class="mb-5 mb-lg-8">
+          <h2 class="section-title fs-2 fs-lg-1 text-primary">Latest News</h2>
           <img src="/assets/images/line-small.png" alt="" />
         </div>
         <!-- 消息內容 -->
-        <ul class="list-unstyled mb-8">
+        <ul class="list-unstyled mb-5 mb-lg-8">
           <li class="d-flex align-items-center border-dashed">
             <div class="bg-secondary rounded-pill px-4 news-date me-4">
-              <p class="lh-sm fs-10 text-primary">2025.08.20</p>
+              <p class="lh-sm fs-11 fs-lg-10 text-primary">2025.08.20</p>
             </div>
             <div
               class="d-flex align-items-center flex-grow-1 news-content py-5"
             >
-              <p class="fs-8">全新｜創意家庭派對包限量開賣！</p>
+              <p class="fs-9 fs-lg-8 news-text">
+                全新｜創意家庭派對包限量開賣！
+              </p>
               <img
                 src="/assets/images/arrow_right_circle.png"
                 alt=""
@@ -114,12 +112,14 @@
           </li>
           <li class="d-flex align-items-center border-dashed">
             <div class="bg-secondary rounded-pill px-4 news-date me-4">
-              <p class="lh-sm fs-10 text-primary">2025.08.08</p>
+              <p class="lh-sm fs-11 fs-lg-10 text-primary">2025.08.08</p>
             </div>
             <div
               class="d-flex align-items-center flex-grow-1 news-content py-5"
             >
-              <p class="fs-8">週末直播｜一起做 Pizza，零失敗上手！</p>
+              <p class="fs-9 fs-lg-8 news-text">
+                週末直播｜一起做 Pizza，零失敗上手！
+              </p>
               <img
                 src="/assets/images/arrow_right_circle.png"
                 alt=""
@@ -129,12 +129,14 @@
           </li>
           <li class="d-flex align-items-center border-dashed">
             <div class="bg-secondary rounded-pill px-4 news-date me-4">
-              <p class="lh-sm fs-10 text-primary">2025.07.25</p>
+              <p class="lh-sm fs-11 fs-lg-10 text-primary">2025.07.25</p>
             </div>
             <div
               class="d-flex align-items-center flex-grow-1 news-content py-5"
             >
-              <p class="fs-8">秋季限定｜客製口味披薩包，讓家變披薩工坊</p>
+              <p class="fs-9 fs-lg-8 news-text">
+                秋季限定｜客製口味披薩包，讓家變披薩工坊
+              </p>
               <img
                 src="/assets/images/arrow_right_circle.png"
                 alt=""
@@ -145,7 +147,7 @@
         </ul>
         <!-- 查看更多按鈕 -->
         <a href="#"
-          ><button class="btn-filled-primary">
+          ><button class="btn-filled-primary news-button">
             <div class="d-flex align-items-center">
               查看更多<i class="bi bi-arrow-right fs-6 ms-2"></i>
             </div>
@@ -154,51 +156,51 @@
       </div>
     </section>
     <!-- 分隔波浪線 -->
-    <div class="d-block w-100 wave-line mt-10 mb-8"></div>
+    <div class="d-block w-100 wave-line mt-6 mt-lg-10 mb-5 mb-lg-8"></div>
     <!-- Our story區塊 -->
-    <section class="container pb-10">
+    <section class="container pb-6 pb-lg-10">
       <div class="text-center">
         <!-- 標題 -->
-        <div class="mb-8">
-          <h2 class="section-title fs-1 text-primary">Our Story</h2>
+        <div class="mb-6 mb-lg-8">
+          <h2 class="section-title fs-2 fs-lg-1 text-primary">Our Story</h2>
           <img src="/assets/images/line-small.png" alt="" />
         </div>
-        <!-- 圖片區 -->
-        <div class="story-image mx-auto mb-8">
+        <!-- 圖片區 改 -->
+        <div class="story-image mx-auto mb-6 mb-lg-8">
           <img
-            src="/assets/images/story-image.png"
-            alt="手作披薩"
+            src="/assets/images/video_frame_169.svg"
+            alt="手繪框"
             class="d-block w-100"
           />
         </div>
         <!-- story內容 -->
         <div class="mb-5">
-          <p class="fs-8 text-gray-950 mb-3">
+          <p class="fs-9 fs-lg-8 text-gray-950 mb-3">
             我們相信，生活中的幸福感，往往來自那些「親手完成」的小小時刻。
           </p>
-          <p class="fs-8 text-gray-950">
+          <p class="fs-9 fs-lg-8 text-gray-950">
             揉一團麵、等待它在廚房角落慢慢發酵、看著香氣四溢的披薩出爐——這些過程，不只是料理，更是讓人心安的療癒儀式。
           </p>
         </div>
         <div class="mb-5">
-          <p class="fs-8 text-gray-950 mb-3">
+          <p class="fs-9 fs-lg-8 text-gray-950 mb-3">
             Ferment at Home
             誕生於對「動手做」的熱愛，也源自於我們對現代生活節奏的理解。
           </p>
-          <p class="fs-8 text-gray-950">
+          <p class="fs-9 fs-lg-8 text-gray-950">
             只要打開一個材料包，就能展開一段從「揉麵、發酵、創作」到「出爐」的完整旅程。
           </p>
         </div>
         <div class="mb-5">
-          <p class="fs-8 text-gray-950 mb-3">
+          <p class="fs-9 fs-lg-8 text-gray-950 mb-3">
             我們希望帶來的不僅僅是一餐，而是一種新的生活方式：
           </p>
-          <p class="fs-8 text-gray-950">
+          <p class="fs-9 fs-lg-8 text-gray-950">
             在家，也能有派對的熱鬧、陪伴的溫暖，以及創意帶來的樂趣。
           </p>
         </div>
         <div>
-          <p class="fs-8 text-gray-950">
+          <p class="fs-9 fs-lg-8 text-gray-950">
             無論是一個人、和家人共享，還是邀請朋友們一起動手做，Ferment at Home
             讓「發酵」成為生活中最簡單、最溫柔的幸福時刻。
           </p>
@@ -206,11 +208,11 @@
       </div>
     </section>
     <!-- 披薩四重奏 -->
-    <section class="container-fluid py-6 py-xl-10 bg-secondary rounded-5">
+    <section class="container-fluid py-6 py-xl-10 bg-secondary pizza-quartet">
       <div class="text-center container-xxl">
         <!-- 標題 -->
-        <div class="mb-8">
-          <h2 class="section-title fs-1 text-primary">Pizza Quartet</h2>
+        <div class="mb-6 mb-lg-8">
+          <h2 class="section-title fs-2 fs-lg-1 text-primary">Pizza Quartet</h2>
           <img src="/assets/images/line-small.png" alt="" />
         </div>
         <!-- 卡片區塊 -->
@@ -228,7 +230,7 @@
               <h3 class="section-title fs-2 text-primary mb-2 mb-lg-3">
                 Dough
               </h3>
-              <p class="fs-9 fs-md-8">薄脆、厚Q、芝心</p>
+              <p class="fs-9 fs-md-8 text-gray-950">薄脆、厚Q、芝心</p>
             </div>
           </div>
           <!-- 卡片2 -->
@@ -244,7 +246,7 @@
               <h3 class="section-title fs-2 text-primary mb-2 mb-lg-3">
                 Sauce
               </h3>
-              <p class="fs-9 fs-md-8">白醬、茄汁、辣醬、BBQ</p>
+              <p class="fs-9 fs-md-8 text-gray-950">白醬、茄汁、辣醬、BBQ</p>
             </div>
           </div>
           <!-- 卡片3 -->
@@ -260,7 +262,7 @@
               <h3 class="section-title fs-2 text-primary mb-2 mb-lg-3">
                 Cheese
               </h3>
-              <p class="fs-9 fs-md-8">莫札瑞拉、切達、帕瑪森</p>
+              <p class="fs-9 fs-md-8 text-gray-950">莫札瑞拉、切達、帕瑪森</p>
             </div>
           </div>
           <!-- 卡片4 -->
@@ -276,23 +278,23 @@
               <h3 class="section-title fs-2 text-primary mb-2 mb-lg-3">
                 Others
               </h3>
-              <p class="fs-9 fs-md-8">多樣食材任選</p>
+              <p class="fs-9 fs-md-8 text-gray-950">多樣食材任選</p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- 披薩流程圖 -->
-    <section class="container-fluid py-6 py-xl-10">
-      <div class="container-xxl">
+    <section class="container-fluid py-10">
+      <div class="container-xxl px-0">
         <!-- step-1 -->
-        <div class="container-fluid mb-8">
+        <div class="container-fluid px-0 mb-8">
           <div class="row">
             <div class="col-12 col-md-6 text-center position-relative">
               <div class="rounded-circle bg-primary step-num">
                 <h3 class="section-title fs-2 fs-lg-1 lh-1 text-white">1</h3>
               </div>
-              <div class="step-one-bg mb-5">
+              <div class="step-one-bg mb-3 mb-lg-5">
                 <img
                   src="/assets/images/step-frame.png"
                   alt=""
@@ -300,7 +302,7 @@
                 />
               </div>
               <div>
-                <p class="fs-8 text-gray-950">
+                <p class="fs-9 fs-lg-8 text-gray-950">
                   將麵團、起司、醬料與新鮮配料一一取出，整齊擺放在餐桌上。
                 </p>
               </div>
@@ -308,13 +310,13 @@
           </div>
         </div>
         <!-- step-2 -->
-        <div class="container-fluid mb-8">
+        <div class="container-fluid px-0 mb-8">
           <div class="row">
             <div class="col-12 col-md-6 text-center position-relative ms-auto">
               <div class="rounded-circle bg-primary step-num">
                 <h3 class="section-title fs-2 fs-lg-1 lh-1 text-white">2</h3>
               </div>
-              <div class="step-two-bg mb-5">
+              <div class="step-two-bg mb-3 mb-lg-5">
                 <img
                   src="/assets/images/step-frame.png"
                   alt=""
@@ -322,7 +324,7 @@
                 />
               </div>
               <div>
-                <p class="fs-8 text-gray-950">
+                <p class="fs-9 fs-lg-8 text-gray-950">
                   將麵團放在灑了麵粉的桌面上，用手掌輕壓，再拿起桿麵棍慢慢桿開。
                 </p>
               </div>
@@ -330,13 +332,13 @@
           </div>
         </div>
         <!-- step-3 -->
-        <div class="container-fluid mb-8">
+        <div class="container-fluid px-0 mb-8">
           <div class="row">
             <div class="col-12 col-md-6 text-center position-relative">
               <div class="rounded-circle bg-primary step-num">
                 <h3 class="section-title fs-2 fs-lg-1 lh-1 text-white">3</h3>
               </div>
-              <div class="step-three-bg mb-5">
+              <div class="step-three-bg mb-3 mb-lg-5">
                 <img
                   src="/assets/images/step-frame.png"
                   alt=""
@@ -344,7 +346,7 @@
                 />
               </div>
               <div>
-                <p class="fs-8 text-gray-950">
+                <p class="fs-9 fs-lg-8 text-gray-950">
                   在餅皮上抹上特製的醬料，撒上滿滿的起司，再仔細擺上各種食材。
                 </p>
               </div>
@@ -352,13 +354,13 @@
           </div>
         </div>
         <!-- step-4 -->
-        <div class="container-fluid mb-8">
+        <div class="container-fluid px-0">
           <div class="row">
             <div class="col-12 col-md-6 text-center position-relative ms-auto">
               <div class="rounded-circle bg-primary step-num">
                 <h3 class="section-title fs-2 fs-lg-1 lh-1 text-white">4</h3>
               </div>
-              <div class="step-four-bg mb-5">
+              <div class="step-four-bg mb-3 mb-lg-5">
                 <img
                   src="/assets/images/step-frame.png"
                   alt=""
@@ -366,7 +368,7 @@
                 />
               </div>
               <div>
-                <p class="fs-8 text-gray-950">
+                <p class="fs-9 fs-lg-8 text-gray-950">
                   金黃的披薩在烤箱裡閃著光，香氣撲鼻。將它小心拿出來，準備享用。
                 </p>
               </div>
@@ -375,9 +377,250 @@
         </div>
       </div>
     </section>
+    <!-- 分隔波浪線 -->
+    <div class="d-block w-100 wave-line mt-6 mt-lg-10 mb-8"></div>
+    <!-- 顧客回饋 -->
+    <section class="container-fluid text-center pb-6 pb-sm-10">
+      <!-- 標題 -->
+      <div class="mb-6 mb-lg-8">
+        <h2 class="section-title fs-2 fs-lg-1 text-primary">Pizza Moments</h2>
+        <img src="/assets/images/line-small.png" alt="" />
+      </div>
+      <!-- 顧客回饋輪播 -->
+      <!-- Slider main container -->
+      <div class="swiper container px-5 position-relative">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- Slide1 -->
+          <div class="swiper-slide moment-border px-5 pt-28 pb-4 pb-xl-44">
+            <div class="mb-4">
+              <img
+                src="/assets/images/moment_1.png"
+                alt=""
+                class="d-block w-100 rounded-4"
+              />
+            </div>
+            <!-- 番茄評等 -->
+            <div class="d-flex gap-2 justify-content-center mb-4">
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+            </div>
+            <!-- 顧客評論 -->
+            <div class="px-4 pb-4">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  src="/assets/images/profile-pic-1.svg"
+                  alt=""
+                  class="d-block me-2"
+                />
+                <p class="text-primary me-auto">吳小姐</p>
+                <p class="text-primary">2025.08.20</p>
+              </div>
+              <p class="fs-9 fs-xl-8 text-gray-950 text-start">
+                沒想到這麼簡單！麵團好柔軟，過程超好玩，整個廚房都變成義式披薩店的味道了。
+              </p>
+            </div>
+          </div>
+          <!-- Slide2 -->
+          <div class="swiper-slide moment-border px-5 pt-28 pb-4 pb-xl-44">
+            <div class="mb-4">
+              <img
+                src="/assets/images/moment_2.png"
+                alt=""
+                class="d-block w-100 rounded-4"
+              />
+            </div>
+            <!-- 番茄評等 -->
+            <div class="d-flex gap-2 justify-content-center mb-4">
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato-half.png"
+                alt="tomato"
+                class="d-block"
+              />
+            </div>
+            <!-- 顧客評論 -->
+            <div class="px-4 pb-4">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  src="/assets/images/profile-pic-2.svg"
+                  alt=""
+                  class="d-block me-2"
+                />
+                <p class="text-primary me-auto">王先生</p>
+                <p class="text-primary">2025.08.08</p>
+              </div>
+              <p class="fs-9 fs-xl-8 text-gray-950 text-start">
+                家庭日直接變成披薩日！小朋友們超愛自己動手加料，我們大家也都愛上這個成果。
+              </p>
+            </div>
+          </div>
+          <!-- Slide3 -->
+          <div class="swiper-slide moment-border px-5 pt-28 pb-4 pb-xl-70">
+            <div class="mb-4">
+              <img
+                src="/assets/images/moment_3.png"
+                alt=""
+                class="d-block w-100 rounded-4"
+              />
+            </div>
+            <!-- 番茄評等 -->
+            <div class="d-flex gap-2 justify-content-center mb-4">
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+            </div>
+            <!-- 顧客評論 -->
+            <div class="px-4 pb-4">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  src="/assets/images/profile-pic-3.svg"
+                  alt=""
+                  class="d-block me-2"
+                />
+                <p class="text-primary me-auto">陳小姐</p>
+                <p class="text-primary">2025.07.30</p>
+              </div>
+              <p class="fs-9 fs-xl-8 text-gray-950 text-start">
+                週末聚會就靠它了！剛出爐的披薩和朋友一起分享，沒有比這更療癒的事。
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide4 -->
+          <div class="swiper-slide moment-border px-5 pt-28 pb-4 pb-xl-44">
+            <div class="mb-4">
+              <img
+                src="/assets/images/moment_1.png"
+                alt=""
+                class="d-block w-100 rounded-4"
+              />
+            </div>
+            <!-- 番茄評等 -->
+            <div class="d-flex gap-2 justify-content-center mb-4">
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+              <img
+                src="/assets/images/tomato.png"
+                alt="tomato"
+                class="d-block"
+              />
+            </div>
+            <!-- 顧客評論 -->
+            <div class="px-4 pb-4">
+              <div class="d-flex align-items-center mb-2">
+                <img
+                  src="/assets/images/profile-pic-1.svg"
+                  alt=""
+                  class="d-block me-2"
+                />
+                <p class="text-primary me-auto">吳小姐</p>
+                <p class="text-primary">2025.08.20</p>
+              </div>
+              <p class="fs-9 fs-xl-8 text-gray-950 text-start">
+                沒想到這麼簡單！麵團好柔軟，過程超好玩，整個廚房都變成義式披薩店的味道了。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+
+        <button
+          class="button-prev btn-filled-primary rounded-circle customer-feedback-btn feedback-btn-left me-3 me-sm-0"
+        >
+          <i class="bi bi-arrow-left fs-6 fs-sm-5"></i>
+        </button>
+
+        <button
+          class="button-next btn-filled-primary rounded-circle customer-feedback-btn feedback-btn-right"
+        >
+          <i class="bi bi-arrow-right fs-6 fs-sm-5"></i>
+        </button>
+      </div>
+    </section>
 
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </body>
 </html>

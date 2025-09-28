@@ -37,6 +37,12 @@
     border-color: var(--bs-primary);
     box-shadow: 0 0 0 4px rgba(176, 51, 43, 48%);
   }
+  //disabled時的樣式
+  &:disabled {
+    color: var(--bs-white);
+    background-color: var(--bs-primary-200);
+    border-color: var(--bs-primary-200);
+  }
 }
 // 外框線
 .btn-outline-primary {
