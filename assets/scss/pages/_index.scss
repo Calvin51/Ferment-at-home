@@ -1,17 +1,21 @@
 .hero-bg {
-  height: 900px;
   background-image: url("/assets/images/hero_bg.png");
   background-size: cover;
 }
 
-.banner-container {
+.banner-box {
   height: 648px;
-  max-width: 1296px;
-  overflow: hidden;
 }
 
-.title-position {
-  top: -30px;
+.banner-title {
+  top: -50px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .banner-button {
@@ -19,9 +23,31 @@
   padding-bottom: 21px;
 }
 
+@media (max-width: 576px) {
+  .banner-image {
+    width: 750px;
+    object-position: -200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-box {
+    height: 375px;
+  }
+}
+
 .news-date {
   padding-top: 9.5px;
   padding-bottom: 9.5px;
+}
+
+@media (max-width: 576px) {
+  .news-text {
+    max-width: 214px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 .border-dashed {
@@ -40,6 +66,11 @@
   }
 }
 
+.news-button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .wave-line {
   height: 30px;
   background-image: url("/assets/images/curved-line.svg");
@@ -47,6 +78,26 @@
 
 .story-image {
   max-width: 856px;
+  border-radius: 48px;
+  background-image: url("https://github.com/Fury51/img-base/blob/main/gif/Adobe%20Express%20-%20our_story.gif?raw=true");
+  background-repeat: no-repeat;
+  background-size: 98%;
+  background-position: center center;
+}
+
+@media (max-width: 576px) {
+  .story-image {
+    border-radius: 32px;
+  }
+}
+
+.pizza-quartet {
+  border-radius: 64px;
+}
+@media (max-width: 576px) {
+  .pizza-quartet {
+    border-radius: 32px;
+  }
 }
 
 .painting-quartetCard-outline {
@@ -100,6 +151,15 @@
   background-position: center center;
 }
 
+@media (max-width: 576px) {
+  .step-one-bg,
+  .step-two-bg,
+  .step-three-bg,
+  .step-four-bg {
+    border-radius: 24px;
+  }
+}
+
 .step-num {
   position: absolute;
   top: -30px;
@@ -121,4 +181,68 @@
     width: 48px;
     height: 48px;
   }
+}
+
+.swiper {
+  // min-height: 531px;
+}
+
+.swiper-button-disabled {
+  color: var(--bs-white);
+  background-color: var(--bs-primary-200);
+  border-color: var(--bs-primary-200);
+}
+
+.customer-feedback-btn {
+  width: 64px;
+  height: 64px;
+
+  padding-top: 14px;
+  padding-bottom: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.feedback-btn-left {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.feedback-btn-right {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+  .customer-feedback-btn {
+    width: 48px;
+    height: 48px;
+
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .feedback-btn-left {
+    position: relative;
+    transform: translateY(0);
+  }
+
+  .feedback-btn-right {
+    position: relative;
+    transform: translateY(0);
+  }
+}
+
+.moment-border {
+  background-image: url("/assets/images/card-border-moment.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
