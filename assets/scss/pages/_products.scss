@@ -1,149 +1,40 @@
-/* 標籤基本樣式 */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* 清除圖片下方2~3公分的空白 */
-img {
-    vertical-align: middle;
-    max-width: 100%;
-    height: auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -12px;
-    margin-left: -12px;
-}
-
-.col-1 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12);
-}
-
-.col-2 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12*2);
-}
-
-.col-3 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12*3);
-}
-
-.col-4 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12*4);
-}
-
-.col-5 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12*5);
-}
-
-.col-6 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12 * 6);
-}
-
-.col-7 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12*7);
-}
-
-.col-8 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12*8);
-}
-
-.col-10 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12*10);
-}
-
-.text-align-center {
-    text-align: center;
-}
-
-.p-24 {
-    padding: 24px;
-}
-.py-12 {
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-.pr-16{
-    padding-right: 16px;
-    padding-left: 16px;
-}
-
-.py-64 {
-    padding-top: 64px;
-    padding-bottom: 64px;
-}
-
-.pb-24 {
-    padding-bottom: 24px;
-}
-
-.pb-48 {
-    padding-bottom: 48px;
-}
-
-.pb-80 {
-    padding-bottom: 80px;
-}
-
-.step-circle{
-    color: var(--bs-white);
-    background-color: var(--bs-primary);
-    font-size: 40px;
-    padding: 12px 13.5px 12px 13.5px;
+.step-circle {
+  color: var(--bs-white);
+  background-color: var(--bs-primary);
+  font-size: 40px;
+  padding: 12px 13.5px 12px 13.5px;
 }
 
 .card-body {
-    background-color: var(--bs-gray-50);
+  background-color: var(--bs-gray-50);
 
-    &:hover{
-        background-color: var(--bs-secondary-100);
-        }
+  &:hover {
+    background-color: var(--bs-secondary-100);
+  }
 }
 
 .card-photo {
-    position: relative;
-    width: 258px;
-    height: 258px;
+  position: relative;
+  width: 258px;
+  height: 258px;
 }
 
 .selling-price {
-    position: absolute;
-    color: var(--bs-primary);
+  position: absolute;
+  color: var(--bs-primary);
 }
 
 .card-check {
-    position: absolute;
-    right: 0px;
-    padding: 8px;
-    background-color: var(--bs-gray-200);
+  position: absolute;
+  right: 0px;
+  padding: 8px;
+  background-color: var(--bs-gray-200);
 
-    &:hover {
-            background-color: var(--bs-gray-200);
-        }
-    
-    &:active {
-        background-color: var(--bs-primary);
-    }
+  &:hover {
+    background-color: var(--bs-gray-200);
+  }
+
+  &:active {
+    background-color: var(--bs-primary);
+  }
 }
