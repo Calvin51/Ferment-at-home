@@ -14,10 +14,10 @@
 }
 
 .card-photo {
-  position: relative;
-  width: 258px;
-  height: 258px;
+    position: relative;
+    display: flex;
 }
+ 
 
 .selling-price {
   position: absolute;
@@ -30,11 +30,61 @@
   padding: 8px;
   background-color: var(--bs-gray-200);
 
-  &:hover {
-    background-color: var(--bs-gray-200);
-  }
-
-  &:active {
-    background-color: var(--bs-primary);
-  }
+    &:hover {
+        background-color: var(--bs-gray-200);
+    }
+    
+    &:active {
+        background-color: var(--bs-primary);
+    }
+    &:focus {
+        background-color: var(--bs-primary);
+    }
 }
+
+
+.card-bodycombin {
+    background-color: var(--bs-gray-50);
+
+    &:hover {
+        background-color: var(--bs-secondary-100);
+    }
+}
+
+.selling-pricecombin {
+    color: var(--bs-primary);
+}
+
+.card-checkcombin {
+    padding: 8px;
+    background-color: var(--bs-gray-200);
+
+    &:hover {
+        background-color: var(--bs-gray-200);
+    }
+
+    &:active {
+        background-color: var(--bs-primary);
+    }
+
+    &:focus {
+        background-color: var(--bs-primary);
+    }
+}
+
+.product-combin {
+    width: 86px;
+}
+
+// @media(max-width:767px) {
+//     .product-md-row {
+//         margin-left: -8px;
+//         margin-right: -8px;
+//     }
+
+//     .products-md-col {
+//         max-width: 240px;
+//         padding-left: 8px;
+//         padding-right: 8px;
+//     }
+// }
