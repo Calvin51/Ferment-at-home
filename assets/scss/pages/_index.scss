@@ -62,6 +62,12 @@
   }
 }
 
+.quartet-image {
+  max-width: 90%;
+  object-fit: cover;
+  object-position: center center;
+}
+
 .step-one-bg {
   border-radius: 32px;
   background-image: url("https://github.com/Fury51/img-base/blob/main/gif/Adobe%20Express%20-%20step_01.gif?raw=true");
