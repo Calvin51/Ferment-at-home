@@ -1,0 +1,107 @@
+.answer-font {
+    font-family: "Darumadrop One", sans-serif;
+    font-size: 3.5rem;
+    color: $primary;
+    position: relative;
+}
+
+.py-14 {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.pb-51 {
+    padding-bottom: 51px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.text-font {
+    font-family: "Darumadrop One", sans-serif;
+    font-size: 1.75rem;
+}
+
+.text-color {
+    color: $black;
+
+    &:hover {
+        color: $primary;
+    }
+
+    &ativer {
+        color: $primary;
+    }
+}
+
+.dashed-to-solid {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-image: linear-gradient(to right, $secondary-300 50%, transparent 50%);
+        background-size: 20px 2px;
+        background-repeat: repeat-x;
+        transition: background 0.3s ease;
+    }
+
+    &:hover::after {
+        background-image: none;
+        background-color: $secondary-300;
+    }
+
+    &:focus::after {
+        background-image: none;
+        background-color: $secondary-300;
+    }
+}
+
+.add-decimal {
+    list-style: decimal;
+    padding-left: 3%;
+}
+
+.add-disc {
+    list-style: disc;
+}
+
+
+// 下拉式改變css
+.dropdown-push .dropdown-menu {
+    position: static !important;
+    display: none !important;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    z-index: auto !important;
+    margin-top: 0 !important;
+    float: none !important;
+    width: 100% !important;
+}
+
+
+.dropdown-push .dropdown-menu.show {
+    display: block !important;
+}
+
+.py-14 {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.text-primary-hover {
+    color: $gray-950;
+    &:hover {
+        color: $primary;
+    }
+}
