@@ -1,37 +1,65 @@
-.input-group .quantity-input {
-    width: 68px;
-    text-align: center;
-    border: none;     
-    outline: none;       
-  }
+*,
+*:before,
+*:after {
+  outline: 1px solid red;
+}
 
-  .popProduct{
-    border-color: transparent;
-  }
-  
-  .sizeChoose{
-    border-radius: 1000px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    width: 80.67px;
-  }
-  .shop-btn{
-    padding: 18px;
-  }
- /* 左邊箭頭 */
-.position-relative .btn-left {
+.input-group .quantity-input {
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.popProduct {
+  border-color: transparent;
+  max-width: 306px;
+}
+
+.sizeChoose {
+  border-radius: 1000px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  width: 80.67px;
+}
+
+.shop-btn {
+  padding: 18px;
+}
+
+.shop-shadow {
+  box-shadow: 0px -2px 24px #0E1E253D;
+}
+
+/* 預設只顯示向下 */
+.arrow-up {
+  display: none;
+}
+
+/* 展開時顯示向上圖，隱藏向下圖 */
+button[aria-expanded="true"] .arrow-up {
+  display: inline;
+}
+
+button[aria-expanded="true"] .arrow-down {
+  display: none;
+}
+
+/* 左邊箭頭 */
+.button-left {
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%); /* 往外偏一半 */
-  z-index: 1;
+  left: 0px;
+  transform: translateX(-50%);
+  /* 往外偏一半 */
+  z-index: 10;
 }
 
 /* 右邊箭頭 */
-.position-relative .btn-right {
+.button-right {
   position: absolute;
   top: 50%;
-  right: 0;
-  transform: translate(50%, -50%); /* 往外偏一半 */
-  z-index: 1;
+  right: 0px;
+  transform: translateX(50%);
+  /* 往外偏一半 */
+  z-index: 10;
 }
