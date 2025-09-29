@@ -75,9 +75,6 @@ if (document.querySelector('.shopCart')) {
     spaceBetween: 24,
     //   RWD
     breakpoints: {
-      320: {
-        slidesPerView: 1,   // 手機顯示 1 張
-      },
       576: { slidesPerView: 2,
       },
       1024: { slidesPerView: 4,
