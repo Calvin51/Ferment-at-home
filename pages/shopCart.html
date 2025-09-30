@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <title>ShopCart</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
-  <title>ShopCart</title>
-</head>
-
-<body>
-  <%- include('./layout/header'); -%>
+  <body>
+    <%- include('./layout/header'); -%>
     <section class="container-fluid text-center mt-lg-10 mt-6 mb-lg-11">
       <!-- 標題 -->
       <div class="mb-lg-11 mb-5">
@@ -23,19 +22,35 @@
       <div class="cart container d-none d-lg-block">
         <div class="row justify-content-center gx-lg-5">
           <div class="col-lg-9">
-            <ul class="list-unstyled p-5 border border-4 border-secondary-300 rounded-3">
+            <ul
+              class="list-unstyled p-5 border border-4 border-secondary-300 rounded-3"
+            >
               <!-- 購物項目1 -->
-              <li class="d-flex align-items-center border-bottom gap-5 py-5 px-8">
-                <img src="../assets/images/pizza-hawaii.png" alt="夏威夷披薩" style="width: 160px; height: 160px" />
+              <li
+                class="d-flex align-items-center border-bottom gap-5 py-5 px-8"
+              >
+                <img
+                  src="../assets/images/pizza-hawaii.png"
+                  alt="夏威夷披薩"
+                  style="width: 160px; height: 160px"
+                />
                 <div style="width: 218px">
                   <h7 class="fw-bold fs-7">夏威夷披薩（6寸）</h7>
                 </div>
-                <div class="border border-2 border-primary rounded-pill" style="width: 180px">
+                <div
+                  class="border border-2 border-primary rounded-pill"
+                  style="width: 180px"
+                >
                   <div class="input-group my-2 justify-content-center">
                     <button class="btn p-3">
                       <img src="../assets/images/minus.svg" alt="少一個" />
                     </button>
-                    <input type="text" value="1" class="quantity-input section-title fs-5" style="width: 68px;" />
+                    <input
+                      type="text"
+                      value="1"
+                      class="quantity-input section-title fs-5"
+                      style="width: 68px"
+                    />
                     <button class="btn p-3">
                       <img src="../assets/images/plus.svg" alt="多一個" />
                     </button>
@@ -46,17 +61,31 @@
                 <img src="../assets/images/trashcan.svg" alt="delet" />
               </li>
               <!-- 購物項目2 -->
-              <li class="d-flex align-items-center border-bottom gap-5 py-5 px-8">
-                <img src="../assets/images/pizza-margaret.png" alt="瑪格麗特批薩" style="width: 160px; height: 160px" />
+              <li
+                class="d-flex align-items-center border-bottom gap-5 py-5 px-8"
+              >
+                <img
+                  src="../assets/images/pizza-margaret.png"
+                  alt="瑪格麗特批薩"
+                  style="width: 160px; height: 160px"
+                />
                 <div style="width: 218px">
                   <h7 class="fw-bold fs-7">瑪格麗特披薩（12寸）</h7>
                 </div>
-                <div class="border border-2 border-primary rounded-pill" style="width: 180px">
+                <div
+                  class="border border-2 border-primary rounded-pill"
+                  style="width: 180px"
+                >
                   <div class="input-group my-2 justify-content-center">
                     <button class="btn p-3">
                       <img src="../assets/images/minus.svg" alt="少一個" />
                     </button>
-                    <input type="text" value="1" class="quantity-input section-title fs-5" style="width: 68px;" />
+                    <input
+                      type="text"
+                      value="1"
+                      class="quantity-input section-title fs-5"
+                      style="width: 68px"
+                    />
                     <button class="btn p-3">
                       <img src="../assets/images/plus.svg" alt="多一個" />
                     </button>
@@ -67,16 +96,28 @@
               </li>
               <!-- 購物項目3 -->
               <li class="d-flex align-items-center gap-5 py-5 px-8">
-                <img src="../assets/images/pizza-meat.png" alt="全肉總匯" style="width: 160px; height: 160px" />
+                <img
+                  src="../assets/images/pizza-meat.png"
+                  alt="全肉總匯"
+                  style="width: 160px; height: 160px"
+                />
                 <div style="width: 218px">
                   <h7 class="fw-bold fs-7">全肉總匯（8寸）</h7>
                 </div>
-                <div class="border border-2 border-primary rounded-pill" style="width: 180px">
+                <div
+                  class="border border-2 border-primary rounded-pill"
+                  style="width: 180px"
+                >
                   <div class="input-group my-2 justify-content-center">
                     <button class="btn p-3">
                       <img src="../assets/images/minus.svg" alt="少一個" />
                     </button>
-                    <input type="text" value="1" class="quantity-input section-title fs-5" style="width: 68px;" />
+                    <input
+                      type="text"
+                      value="1"
+                      class="quantity-input section-title fs-5"
+                      style="width: 68px"
+                    />
                     <button class="btn p-3">
                       <img src="../assets/images/plus.svg" alt="多一個" />
                     </button>
@@ -101,14 +142,19 @@
                   <p class="fs-8">NT$ 100</p>
                 </li>
               </ul>
-              <div class="d-flex justify-content-between align-items-center mt-2 mb-5">
+              <div
+                class="d-flex justify-content-between align-items-center mt-2 mb-5"
+              >
                 <p class="fs-8">應付金額</p>
                 <p class="fs-5 text-primary section-title">NT$ 1,140</p>
               </div>
-              <button class="btn-filled-primary" style="width: 258px" type="button">
+              <button
+                class="btn-filled-primary"
+                style="width: 258px"
+                type="button"
+              >
                 確認付款
               </button>
-
             </div>
           </div>
         </div>
@@ -119,7 +165,11 @@
         <li class="border-bottom pt-3 pb-5 px-3">
           <!-- 產品 -->
           <div class="d-flex gap-3 align-items-center mb-3">
-            <img src="../assets/images/pizza-hawaii.png" alt="夏威夷披薩" style="width: 120px; height: 120px" />
+            <img
+              src="../assets/images/pizza-hawaii.png"
+              alt="夏威夷披薩"
+              style="width: 120px; height: 120px"
+            />
             <div>
               <h7 class="fw-bold fs-7">夏威夷披薩（6寸）</h7>
               <h5 class="text-primary section-title text-start">NT$260</h5>
@@ -132,7 +182,12 @@
                 <button class="btn p-3">
                   <img src="../assets/images/minus.svg" alt="少一個" />
                 </button>
-                <input type="text" value="1" class="quantity-input section-title fs-5" style="width: 139px;" />
+                <input
+                  type="text"
+                  value="1"
+                  class="quantity-input section-title fs-5"
+                  style="width: 139px"
+                />
                 <button class="btn p-3">
                   <img src="../assets/images/plus.svg" alt="多一個" />
                 </button>
@@ -147,7 +202,11 @@
         <li class="border-bottom pt-3 pb-5 px-3">
           <!-- 產品 -->
           <div class="d-flex gap-3 align-items-center mb-3">
-            <img src="../assets/images/pizza-margaret.png" alt="瑪格麗特披薩" style="width: 120px; height: 120px" />
+            <img
+              src="../assets/images/pizza-margaret.png"
+              alt="瑪格麗特披薩"
+              style="width: 120px; height: 120px"
+            />
             <div>
               <h7 class="fw-bold fs-7">瑪格麗特披薩（12寸）</h7>
               <h5 class="text-primary section-title text-start">NT$420</h5>
@@ -160,7 +219,12 @@
                 <button class="btn p-3">
                   <img src="../assets/images/minus.svg" alt="少一個" />
                 </button>
-                <input type="text" value="1" class="quantity-input section-title fs-5" style="width: 139px;" />
+                <input
+                  type="text"
+                  value="1"
+                  class="quantity-input section-title fs-5"
+                  style="width: 139px"
+                />
                 <button class="btn p-3">
                   <img src="../assets/images/plus.svg" alt="多一個" />
                 </button>
@@ -175,7 +239,11 @@
         <li class="border-bottom pt-3 pb-5 px-3">
           <!-- 產品 -->
           <div class="d-flex gap-3 align-items-center mb-3">
-            <img src="../assets/images/pizza-meat.png" alt="全肉總匯" style="width: 120px; height: 120px" />
+            <img
+              src="../assets/images/pizza-meat.png"
+              alt="全肉總匯"
+              style="width: 120px; height: 120px"
+            />
             <div>
               <h7 class="fw-bold fs-7">全肉總匯（8寸）</h7>
               <h5 class="text-primary section-title text-start">NT$360</h5>
@@ -188,7 +256,12 @@
                 <button class="btn p-3">
                   <img src="../assets/images/minus.svg" alt="少一個" />
                 </button>
-                <input type="text" value="1" class="quantity-input section-title fs-5" style="width: 139px;" />
+                <input
+                  type="text"
+                  value="1"
+                  class="quantity-input section-title fs-5"
+                  style="width: 139px"
+                />
                 <button class="btn p-3">
                   <img src="../assets/images/plus.svg" alt="多一個" />
                 </button>
@@ -200,13 +273,12 @@
           </div>
         </li>
       </ul>
-
     </section>
     <!-- 分隔線 -->
     <div class="d-block w-100 wave-line mt-6 mt-lg-10 mb-8"></div>
 
     <!-- 熱門商品 -->
-    <section class="container-fluid text-center pb-6 pb-sm-10" >
+    <section class="container-fluid text-center pb-6 pb-sm-10">
       <!-- 熱門商品標題 -->
       <div class="mb-lg-8 mb-6">
         <h2 class="section-title fs-2 fs-lg-1 text-primary">Popular Items</h2>
@@ -214,16 +286,21 @@
       </div>
       <!-- 熱門商品卡片輪播 -->
       <!-- Slider main container -->
-      <div class="swiper shopCart container position-relative">
+      <div class="swiper shopCart container px-5 position-relative">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper" >
+        <div class="swiper-wrapper">
           <!-- Slides -->
           <!-- Slide1 -->
           <div class="swiper-slide popProduct">
-            <div class="card bg-secondary rounded-4 p-5">
+            <div class="card border-0 bg-secondary rounded-4 p-5">
               <!-- 產品圖   -->
               <div class="text-center">
-                <img src="../assets/images/pizza-cheese.png" class="card-img-top" style="width: 258px" alt="起司三重奏" />
+                <img
+                  src="../assets/images/pizza-cheese.png"
+                  class="card-img-top"
+                  style="width: 258px"
+                  alt="起司三重奏"
+                />
               </div>
               <!-- 產品介紹 -->
               <div>
@@ -233,21 +310,28 @@
               </div>
               <!-- 尺寸選擇 -->
               <div class="d-flex justify-content-center gap-2 mb-5">
-                <button class="sizeChoose btn btn-gray-700 fs-8">6寸
-                </button>
-                <button class="sizeChoose btn btn-gray-100 fs-8">8寸
-                </button>
-                <button class="sizeChoose btn btn-gray-100 fs-8">12寸
-                </button>
+                <button class="sizeChoose btn btn-gray-700 fs-8">6寸</button>
+                <button class="sizeChoose btn btn-gray-100 fs-8">8寸</button>
+                <button class="sizeChoose btn btn-gray-100 fs-8">12寸</button>
               </div>
               <!-- 數量選擇 -->
-              <div class="d-flex gap-2 justify-content-center align-items-center">
-                <div class="border border-2 border-primary rounded-pill bg-white" style="width: 186px">
+              <div
+                class="d-flex gap-2 justify-content-center align-items-center"
+              >
+                <div
+                  class="border border-2 border-primary rounded-pill bg-white"
+                  style="width: 186px"
+                >
                   <div class="input-group my-2 justify-content-center">
                     <button class="btn p-3">
                       <img src="../assets/images/minus.svg" alt="少一個" />
                     </button>
-                    <input type="text" value="1" class="quantity-input section-title fs-5" style="width: 74px;" />
+                    <input
+                      type="text"
+                      value="1"
+                      class="quantity-input section-title fs-5"
+                      style="width: 74px"
+                    />
                     <button class="btn p-3">
                       <img src="../assets/images/plus.svg" alt="多一個" />
                     </button>
@@ -255,7 +339,10 @@
                 </div>
 
                 <button class="btn bg-primary shop-btn rounded-circle">
-                  <img src="../assets/images/Shopping-Cart-1-Line--Streamline-Mingcute.svg" alt="購物車" />
+                  <img
+                    src="../assets/images/Shopping-Cart-1-Line--Streamline-Mingcute.svg"
+                    alt="購物車"
+                  />
                 </button>
               </div>
             </div>
@@ -265,7 +352,12 @@
             <div class="card popProduct bg-secondary rounded-4 p-5">
               <!-- 產品圖 -->
               <div class="text-center">
-                <img src="../assets/images/pizza-hawaii.png" class="card-img-top" style="width: 258px" alt="夏威夷披薩" />
+                <img
+                  src="../assets/images/pizza-hawaii.png"
+                  class="card-img-top"
+                  style="width: 258px"
+                  alt="夏威夷披薩"
+                />
               </div>
               <!-- 產品介紹 -->
               <div>
@@ -277,24 +369,28 @@
               </div>
               <!-- 尺寸選擇  -->
               <div class="d-flex justify-content-center gap-2 mb-5">
-                <button class="sizeChoose btn btn-gray-700 fs-8">
-                  6寸
-                </button>
-                <button class="sizeChoose btn btn-gray-100 fs-8">
-                  8寸
-                </button>
-                <button class="sizeChoose btn btn-gray-100 fs-8">
-                  12寸
-                </button>
+                <button class="sizeChoose btn btn-gray-700 fs-8">6寸</button>
+                <button class="sizeChoose btn btn-gray-100 fs-8">8寸</button>
+                <button class="sizeChoose btn btn-gray-100 fs-8">12寸</button>
               </div>
               <!-- 數量選擇  -->
-              <div class="d-flex gap-2 justify-content-center align-items-center">
-                <div class="border border-2 border-primary rounded-pill bg-white" style="width: 186px">
+              <div
+                class="d-flex gap-2 justify-content-center align-items-center"
+              >
+                <div
+                  class="border border-2 border-primary rounded-pill bg-white"
+                  style="width: 186px"
+                >
                   <div class="input-group my-2 justify-content-center">
                     <button class="btn p-3">
                       <img src="../assets/images/minus.svg" alt="少一個" />
                     </button>
-                    <input type="text" value="1" class="quantity-input section-title fs-5" style="width: 74px;" />
+                    <input
+                      type="text"
+                      value="1"
+                      class="quantity-input section-title fs-5"
+                      style="width: 74px"
+                    />
                     <button class="btn p-3">
                       <img src="../assets/images/plus.svg" alt="多一個" />
                     </button>
@@ -302,7 +398,10 @@
                 </div>
 
                 <button class="btn bg-primary shop-btn rounded-circle">
-                  <img src="../assets/images/Shopping-Cart-1-Line--Streamline-Mingcute.svg" alt="購物車" />
+                  <img
+                    src="../assets/images/Shopping-Cart-1-Line--Streamline-Mingcute.svg"
+                    alt="購物車"
+                  />
                 </button>
               </div>
             </div>
@@ -312,7 +411,12 @@
             <div class="card popProduct bg-secondary rounded-4 p-5">
               <!-- 產品圖 -->
               <div class="text-center">
-                <img src="../assets/images/pizza-margaret.png" class="card-img-top" style="width: 258px" alt="瑪格麗特披薩" />
+                <img
+                  src="../assets/images/pizza-margaret.png"
+                  class="card-img-top"
+                  style="width: 258px"
+                  alt="瑪格麗特披薩"
+                />
               </div>
               <!-- 產品介紹 -->
               <div>
@@ -324,24 +428,28 @@
               </div>
               <!-- 尺寸選擇 -->
               <div class="d-flex justify-content-center gap-2 mb-5">
-                <button class="sizeChoose btn btn-gray-700 fs-8">
-                  6寸
-                </button>
-                <button class="sizeChoose btn btn-gray-100 fs-8">
-                  8寸
-                </button>
-                <button class="sizeChoose btn btn-gray-100 fs-8">
-                  12寸
-                </button>
+                <button class="sizeChoose btn btn-gray-700 fs-8">6寸</button>
+                <button class="sizeChoose btn btn-gray-100 fs-8">8寸</button>
+                <button class="sizeChoose btn btn-gray-100 fs-8">12寸</button>
               </div>
               <!-- 數量選擇 -->
-              <div class="d-flex gap-2 justify-content-center align-items-center">
-                <div class="border border-2 border-primary rounded-pill bg-white" style="width: 186px">
+              <div
+                class="d-flex gap-2 justify-content-center align-items-center"
+              >
+                <div
+                  class="border border-2 border-primary rounded-pill bg-white"
+                  style="width: 186px"
+                >
                   <div class="input-group my-2 justify-content-center">
                     <button class="btn p-3">
                       <img src="../assets/images/minus.svg" alt="少一個" />
                     </button>
-                    <input type="text" value="1" class="quantity-input section-title fs-5" style="width: 74px;" />
+                    <input
+                      type="text"
+                      value="1"
+                      class="quantity-input section-title fs-5"
+                      style="width: 74px"
+                    />
                     <button class="btn p-3">
                       <img src="../assets/images/plus.svg" alt="多一個" />
                     </button>
@@ -349,10 +457,12 @@
                 </div>
 
                 <button class="btn bg-primary shop-btn rounded-circle">
-                  <img src="../assets/images/Shopping-Cart-1-Line--Streamline-Mingcute.svg" alt="購物車" />
+                  <img
+                    src="../assets/images/Shopping-Cart-1-Line--Streamline-Mingcute.svg"
+                    alt="購物車"
+                  />
                 </button>
               </div>
-
             </div>
           </div>
 
@@ -361,7 +471,12 @@
             <div class="card popProduct bg-secondary rounded-4 p-5">
               <!-- 產品圖 -->
               <div class="text-center">
-                <img src="../assets/images/pizza-meat.png" class="card-img-top" style="width: 258px" alt="全肉總匯" />
+                <img
+                  src="../assets/images/pizza-meat.png"
+                  class="card-img-top"
+                  style="width: 258px"
+                  alt="全肉總匯"
+                />
               </div>
               <!-- 產品介紹 -->
               <div>
@@ -373,24 +488,28 @@
               </div>
               <!-- 尺寸選擇 -->
               <div class="d-flex justify-content-center gap-2 mb-5">
-                <button class="sizeChoose btn btn-gray-700 fs-8">
-                  6寸
-                </button>
-                <button class="sizeChoose btn btn-gray-100 fs-8">
-                  8寸
-                </button>
-                <button class="sizeChoose btn btn-gray-100 fs-8">
-                  12寸
-                </button>
+                <button class="sizeChoose btn btn-gray-700 fs-8">6寸</button>
+                <button class="sizeChoose btn btn-gray-100 fs-8">8寸</button>
+                <button class="sizeChoose btn btn-gray-100 fs-8">12寸</button>
               </div>
               <!-- 數量選擇 -->
-              <div class="d-flex gap-2 justify-content-center align-items-center">
-                <div class="border border-2 border-primary rounded-pill bg-white" style="width: 186px">
+              <div
+                class="d-flex gap-2 justify-content-center align-items-center"
+              >
+                <div
+                  class="border border-2 border-primary rounded-pill bg-white"
+                  style="width: 186px"
+                >
                   <div class="input-group my-2 justify-content-center">
                     <button class="btn p-3">
                       <img src="../assets/images/minus.svg" alt="少一個" />
                     </button>
-                    <input type="text" value="1" class="quantity-input section-title fs-5" style="width: 74px;" />
+                    <input
+                      type="text"
+                      value="1"
+                      class="quantity-input section-title fs-5"
+                      style="width: 74px"
+                    />
                     <button class="btn p-3">
                       <img src="../assets/images/plus.svg" alt="多一個" />
                     </button>
@@ -398,7 +517,10 @@
                 </div>
 
                 <button class="btn bg-primary shop-btn rounded-circle">
-                  <img src="../assets/images/Shopping-Cart-1-Line--Streamline-Mingcute.svg" alt="購物車" />
+                  <img
+                    src="../assets/images/Shopping-Cart-1-Line--Streamline-Mingcute.svg"
+                    alt="購物車"
+                  />
                 </button>
               </div>
             </div>
@@ -408,7 +530,12 @@
             <div class="card popProduct bg-secondary rounded-4 p-5">
               <!-- 產品圖   -->
               <div class="text-center">
-                <img src="../assets/images/pizza-cheese.png" class="card-img-top" style="width: 258px" alt="起司三重奏" />
+                <img
+                  src="../assets/images/pizza-cheese.png"
+                  class="card-img-top"
+                  style="width: 258px"
+                  alt="起司三重奏"
+                />
               </div>
               <!-- 產品介紹 -->
               <div>
@@ -418,21 +545,28 @@
               </div>
               <!-- 尺寸選擇 -->
               <div class="d-flex justify-content-center gap-2 mb-5">
-                <button class="sizeChoose btn btn-gray-700 fs-8">6寸
-                </button>
-                <button class="sizeChoose btn btn-gray-100 fs-8">8寸
-                </button>
-                <button class="sizeChoose btn btn-gray-100 fs-8">12寸
-                </button>
+                <button class="sizeChoose btn btn-gray-700 fs-8">6寸</button>
+                <button class="sizeChoose btn btn-gray-100 fs-8">8寸</button>
+                <button class="sizeChoose btn btn-gray-100 fs-8">12寸</button>
               </div>
               <!-- 數量選擇 -->
-              <div class="d-flex gap-2 justify-content-center align-items-center">
-                <div class="border border-2 border-primary rounded-pill bg-white" style="width: 186px">
+              <div
+                class="d-flex gap-2 justify-content-center align-items-center"
+              >
+                <div
+                  class="border border-2 border-primary rounded-pill bg-white"
+                  style="width: 186px"
+                >
                   <div class="input-group my-2 justify-content-center">
                     <button class="btn p-3">
                       <img src="../assets/images/minus.svg" alt="少一個" />
                     </button>
-                    <input type="text" value="1" class="quantity-input section-title fs-5" style="width: 74px;" />
+                    <input
+                      type="text"
+                      value="1"
+                      class="quantity-input section-title fs-5"
+                      style="width: 74px"
+                    />
                     <button class="btn p-3">
                       <img src="../assets/images/plus.svg" alt="多一個" />
                     </button>
@@ -440,27 +574,38 @@
                 </div>
 
                 <button class="btn bg-primary shop-btn rounded-circle">
-                  <img src="../assets/images/Shopping-Cart-1-Line--Streamline-Mingcute.svg" alt="購物車" />
+                  <img
+                    src="../assets/images/Shopping-Cart-1-Line--Streamline-Mingcute.svg"
+                    alt="購物車"
+                  />
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-          <!-- If we need navigation buttons -->
+        <!-- If we need navigation buttons -->
 
-          <button
-            class="swiper-button-prev btn-filled-primary rounded-circle shop-btn button-left me-3 me-sm-0"
-            type="button" >
-            <img src="../assets/images/Arrow-Left-Line--Streamline-Mingcute-2.svg" alt="向左" />
-          </button>
+        <button
+          class="swiper-button-prev btn-filled-primary rounded-circle shop-btn button-left me-3 me-sm-0"
+          type="button"
+        >
+          <img
+            src="../assets/images/Arrow-Left-Line--Streamline-Mingcute-2.svg"
+            alt="向左"
+          />
+        </button>
 
-          <button class="swiper-button-next btn-filled-primary rounded-circle shop-btn button-right me-3 me-sm-0"
-            type="button">
-            <img src="../assets/images/Arrow-Right-Line--Streamline-Mingcute.svg" alt="向右" />
-          </button>
+        <button
+          class="swiper-button-next btn-filled-primary rounded-circle shop-btn button-right me-3 me-sm-0"
+          type="button"
+        >
+          <img
+            src="../assets/images/Arrow-Right-Line--Streamline-Mingcute.svg"
+            alt="向右"
+          />
+        </button>
       </div>
-      
     </section>
 
     <!-- 結帳區 -->
@@ -470,9 +615,21 @@
         <div class="d-flex justify-content-between align-items-center">
           <div class="mb-4">
             <div class="fs-9">應付金額</div>
-            <button class="btn btn-link p-0 fs-11 text-gray-700" data-bs-toggle="collapse" data-bs-target="#payDetail">
-              付款明細<span class="ms-1"><img src="../assets/images/Down-Line--Streamline-Mingcute.svg" alt="展開" class="arrow-down">
-            <img src="../assets/images/Up-Line--Streamline-Mingcute.svg" alt="收合" class="arrow-up"></span>
+            <button
+              class="btn btn-link p-0 fs-11 text-gray-700"
+              data-bs-toggle="collapse"
+              data-bs-target="#payDetail"
+            >
+              付款明細<span class="ms-1"
+                ><img
+                  src="../assets/images/Down-Line--Streamline-Mingcute.svg"
+                  alt="展開"
+                  class="arrow-down" />
+                <img
+                  src="../assets/images/Up-Line--Streamline-Mingcute.svg"
+                  alt="收合"
+                  class="arrow-up"
+              /></span>
             </button>
             <style>
               /* aria-expanded=true 時把箭頭換成向上 */
@@ -482,13 +639,13 @@
               button[aria-expanded="false"] .icon::before {
                 content: "\25BC"; /* ▼ */
               }
-              </style>
+            </style>
           </div>
           <div class="fs-5 text-primary section-title">NT$ 1,140</div>
         </div>
 
         <!-- 收合內容佔滿版 -->
-        <div class="collapse my-4 " id="payDetail">
+        <div class="collapse my-4" id="payDetail">
           <div class="w-100">
             <div class="text-gray-950 fs-9 d-flex justify-content-between mb-2">
               <span>小計</span><span>NT$ 1,040</span>
@@ -506,10 +663,8 @@
       </div>
     </div>
 
-
     <%- include('./layout/footer'); -%>
-      <script type="module" src="../main.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-</body>
-
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </body>
 </html>
