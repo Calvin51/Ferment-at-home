@@ -7,6 +7,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+  />
     <title>ShopCart</title>
   </head>
 
@@ -590,20 +594,14 @@
           class="swiper-button-prev btn-filled-primary rounded-circle shop-btn button-left me-3 me-sm-0"
           type="button"
         >
-          <img
-            src="../assets/images/Arrow-Left-Line--Streamline-Mingcute-2.svg"
-            alt="向左"
-          />
+        <i class="bi bi-arrow-left fs-6 fs-sm-5"></i>
         </button>
 
         <button
           class="swiper-button-next btn-filled-primary rounded-circle shop-btn button-right me-3 me-sm-0"
           type="button"
         >
-          <img
-            src="../assets/images/Arrow-Right-Line--Streamline-Mingcute.svg"
-            alt="向右"
-          />
+        <i class="bi bi-arrow-right fs-6 fs-sm-5"></i>
         </button>
       </div>
     </section>
@@ -631,15 +629,7 @@
                   class="arrow-up"
               /></span>
             </button>
-            <style>
-              /* aria-expanded=true 時把箭頭換成向上 */
-              button[aria-expanded="true"] .icon::before {
-                content: "\25B2"; /* ▲ */
-              }
-              button[aria-expanded="false"] .icon::before {
-                content: "\25BC"; /* ▼ */
-              }
-            </style>
+          
           </div>
           <div class="fs-5 text-primary section-title">NT$ 1,140</div>
         </div>
