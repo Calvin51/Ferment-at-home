@@ -1,34 +1,56 @@
-.step-circle {
-  color: var(--bs-white);
-  background-color: var(--bs-primary);
-  font-size: 40px;
-  padding: 12px 13.5px 12px 13.5px;
+// 步驟圈圈
+.step {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
 }
 
-.card-body {
-  background-color: var(--bs-gray-50);
+.step-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
-  &:hover {
-    background-color: var(--bs-secondary-100);
-  }
+.step-number {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+    .step {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+// 產品卡片
+.card-body {
+    background-color: var(--bs-gray-50);
+
+    &:hover {
+        background-color: var(--bs-secondary-100);
+    }
 }
 
 .card-photo {
     position: relative;
-    display: flex;
 }
  
-
 .selling-price {
-  position: absolute;
-  color: var(--bs-primary);
+    position: absolute;
+    left: 0px;
+    color: var(--bs-primary);
 }
 
+// 卡片上圓勾勾
 .card-check {
-  position: absolute;
-  right: 0px;
-  padding: 8px;
-  background-color: var(--bs-gray-200);
+    position: absolute;
+    right: 0px;
+    padding: 8px;
+    background-color: var(--bs-gray-200);
 
     &:hover {
         background-color: var(--bs-gray-200);
@@ -37,54 +59,22 @@
     &:active {
         background-color: var(--bs-primary);
     }
+    
     &:focus {
         background-color: var(--bs-primary);
     }
 }
 
+.check {
+    width: 19.96px;
+}
 
-.card-bodycombin {
-    background-color: var(--bs-gray-50);
-
-    &:hover {
-        background-color: var(--bs-secondary-100);
+@media (min-width: 768px) {
+    .check {
+        width: 23.29px;
     }
 }
 
-.selling-pricecombin {
-    color: var(--bs-primary);
+.product-shadow {
+    box-shadow: 0px -2px 24px #0E1E253D;
 }
-
-.card-checkcombin {
-    padding: 8px;
-    background-color: var(--bs-gray-200);
-
-    &:hover {
-        background-color: var(--bs-gray-200);
-    }
-
-    &:active {
-        background-color: var(--bs-primary);
-    }
-
-    &:focus {
-        background-color: var(--bs-primary);
-    }
-}
-
-.product-combin {
-    width: 86px;
-}
-
-// @media(max-width:767px) {
-//     .product-md-row {
-//         margin-left: -8px;
-//         margin-right: -8px;
-//     }
-
-//     .products-md-col {
-//         max-width: 240px;
-//         padding-left: 8px;
-//         padding-right: 8px;
-//     }
-// }
