@@ -10,15 +10,15 @@
 
 <body>
     <%- include('./layout/header'); -%>
-        <main class="bg-gray-50 py-10">
+        <main class="bg-gray-50 py-lg-10 py-5">
             <section>
                 <div class="container">
-                    <div class="text-center pb-11">
+                    <div class="text-center pb-lg-11 pb-7">
                         <h2 class="h2 fw-bold answer-font">FQA</h2>
                         <img class="mx-auto" src="../assets/images/line-small.png" alt="line-small">
                     </div>
                     <div class="row pb-100">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-12 mb-5">
                             <div class="text-center pb-3">
                                 <img class="img-fluid" src="../assets/images/question.svg" alt="question">
                             </div>
@@ -28,7 +28,7 @@
                                 進入官網首頁後，先選擇你想要的類別（如餅皮、醬料），加入購物車後依步驟結帳即可。
                             </p>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-12 mb-5">
                             <div class="text-center pb-3">
                                 <img class="img-fluid" src="../assets/images/question-02.svg" alt="question-02">
                             </div>
@@ -38,9 +38,9 @@
                                 Pizza 材料包服務，可依照喜好自由搭配餅皮、醬料與配料。
                             </p>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-12">
                             <div class="text-center pb-3">
-                                <img class="img-fluid" src="../assets/images/question-02.svg" alt="question">
+                                <img class="img-fluid" src="../assets/images/question-03.svg" alt="question">
                             </div>
                             <p class="text-center px-5 py-14 fs-8 bg-white rounded-2 mb-3 text-gray-950">Pizza 材料應該如何保存？
                             </p>
@@ -54,26 +54,39 @@
                     <img src="../assets/images/curved line.svg" alt="">
                 </figure>
             </section>
+            <!-- 第一個下拉是選單(之後可能要討論一下樣式，設計稿的rwd跟桌機板，有點矛盾) -->
             <section>
                 <div class="container">
-                    <div class="row justify-content-center justify-content-lg-between flex-column flex-lg-row mt-11 mb-5">
+                    <div
+                        class="row justify-content-center justify-content-lg-between flex-column flex-lg-row mt-11 mb-5">
                         <div class="col-lg-3 col-12">
                             <ul class="nav nav-underline gap-1 flex-column" role="tablist">
-                                <li class="nav-item dashed-to-solid text-lg-start text-center" role="presentation">
+                                <!--mb-lg-0 mb-4  -->
+                                <li class="nav-item dashed-to-solid text-lg-start text-center mb-lg-0 mb-4"
+                                    role="presentation">
                                     <button class="border-0 active bg-gray-50 text-color text-font lh-base"
                                         id="home-tab" data-bs-toggle="tab" data-bs-target="#home-pane" type="button"
-                                        role="tab" aria-controls="home-pane" aria-selected="true">Payment & Orders
+                                        role="tab" aria-controls="home-pane" aria-selected="true"><span
+                                            class="me-2"><img src="../assets/images/fqa-payment-icon.svg" alt="fqa-payment-icon"></span>Payment & Orders
                                     </button>
                                 </li>
-                                <li class="nav-item dashed-to-solid text-lg-start text-center" role="presentation">
+                                <!--  d-lg-block d-none -->
+                                <li class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none"
+                                    role="presentation">
                                     <button class="border-0 bg-gray-50 text-color text-font lh-base" id="profile-tab"
                                         data-bs-toggle="tab" data-bs-target="#profile-pane" type="button" role="tab"
-                                        aria-controls="profile-pane" aria-selected="false">Shipping & Delivery</button>
+                                        aria-controls="profile-pane" aria-selected="false"><span
+                                            class="me-2 drop-icon"><img src="../assets/images/fqa-rocket-icon.svg"
+                                                alt="fqa-rocket-icon"></span>Shipping & Delivery</button>
                                 </li>
-                                <li class="nav-item dashed-to-solid text-lg-start text-center mb-lg-0 mb-3" role="presentation">
+                                <!-- d-lg-block d-none -->
+                                <li class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none mb-lg-0 mb-3"
+                                    role="presentation">
                                     <button class="border-0 bg-gray-50 text-color text-font lh-base" id="contact-tab"
                                         data-bs-toggle="tab" data-bs-target="#contact-pane" type="button" role="tab"
-                                        aria-controls="contact-pane" aria-selected="false">Products & Gifts</button>
+                                        aria-controls="contact-pane" aria-selected="false"><span
+                                            class="me-2 drop-icon"><img src="../assets/images/fqa-gift-icon.svg"
+                                                alt=""></span>Products & Gifts</button>
                                 </li>
                             </ul>
                         </div>
@@ -420,9 +433,337 @@
                     </div>
                 </div>
             </section>
+
+            <!-- 第二個 -->
+            <section>
+                <div class="container d-lg-none d-block">
+                    <div class="row justify-content-center justify-content-lg-between flex-column flex-lg-row mb-5">
+                        <div class="col-lg-3 col-12">
+                            <ul class="nav nav-underline gap-1 flex-column" role="tablist">
+                                <!--mb-lg-0 mb-4  -->
+                                <li class="nav-item dashed-to-solid text-lg-start text-center mb-lg-0 mb-4"
+                                    role="presentation">
+                                    <button class="border-0 active bg-gray-50 text-color text-font lh-base"
+                                        id="home-tab" data-bs-toggle="tab" data-bs-target="#home-pane" type="button"
+                                        role="tab" aria-controls="home-pane" aria-selected="true"><span
+                                            class="me-2"><img src="../assets/images/fqa-rocket-icon.svg" alt="fqa-payment-icon"></span>Shipping & Delivery
+                                    </button>
+                                </li>
+                                <!--  d-lg-block d-none -->
+                                <li class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none"
+                                    role="presentation">
+                                    <button class="border-0 bg-gray-50 text-color text-font lh-base" id="profile-tab"
+                                        data-bs-toggle="tab" data-bs-target="#profile-pane" type="button" role="tab"
+                                        aria-controls="profile-pane" aria-selected="false">Shipping & Delivery</button>
+                                </li>
+                                <!-- d-lg-block d-none -->
+                                <li class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none mb-lg-0 mb-3"
+                                    role="presentation">
+                                    <button class="border-0 bg-gray-50 text-color text-font lh-base" id="contact-tab"
+                                        data-bs-toggle="tab" data-bs-target="#contact-pane" type="button" role="tab"
+                                        aria-controls="contact-pane" aria-selected="false">Products & Gifts</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content col-12 col-lg-8">
+                            <div class="tab-pane fade show active">
+                                <div class="dropdown dropdown-push w-100 mb-5">
+                                    <div class="d-flex gap-3">
+                                        <div class="d-lg-block d-none">
+                                            <img src="../assets/images/dropdown-question-01.png"
+                                                alt="dropdown-question-01">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <button
+                                                class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                data-plus-src="../assets/images/q-plus.svg"
+                                                data-minus-src="../assets/images/q-minus.svg">
+                                                有哪些配送方式可以選擇？
+                                                <span><img class="toggle-icon" src="../assets/images/q-plus.svg" alt="">
+                                                </span>
+                                            </button>
+                                            <div class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4">
+                                                <p class="fs-8">目前提供以下三種付款方式：</p>
+                                                <ol class="add-decimal w-100 fs-8">
+                                                    <li>貨到付款<ul class="add-disc">
+                                                            <li>訂購成功後，待收到包裹時再直接付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>信用卡付款（VISA、MasterCard、JCB）<ul class="add-disc">
+                                                            <li>在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>銀行轉帳<ul class="add-disc">
+                                                            <li>訂單確認後，系統會提供一組銀行帳號，請於 3 日內完成匯款，以確保訂單執行。</li>
+                                                            <li>若逾期未付款，訂單可能會自動取消。</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <div class="d-lg-block d-none">
+                                            <img src="../assets/images/dropdown-question-01.png"
+                                                alt="dropdown-question-01">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <button
+                                                class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                data-plus-src="../assets/images/q-plus.svg"
+                                                data-minus-src="../assets/images/q-minus.svg">
+                                                商品何時會寄出？送達時間多久？
+                                                <span><img class="toggle-icon" src="../assets/images/q-plus.svg" alt="">
+                                                </span>
+                                            </button>
+                                            <div class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4">
+                                                <p class="fs-8">目前提供以下三種付款方式：</p>
+                                                <ol class="add-decimal w-100 fs-8">
+                                                    <li>貨到付款<ul class="add-disc">
+                                                            <li>訂購成功後，待收到包裹時再直接付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>信用卡付款（VISA、MasterCard、JCB）<ul class="add-disc">
+                                                            <li>在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>銀行轉帳<ul class="add-disc">
+                                                            <li>訂單確認後，系統會提供一組銀行帳號，請於 3 日內完成匯款，以確保訂單執行。</li>
+                                                            <li>若逾期未付款，訂單可能會自動取消。</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <div class="d-lg-block d-none">
+                                            <img src="../assets/images/dropdown-question-01.png"
+                                                alt="dropdown-question-01">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <button
+                                                class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                data-plus-src="../assets/images/q-plus.svg"
+                                                data-minus-src="../assets/images/q-minus.svg">
+                                                如果收到的商品有問題怎麼辦？
+                                                <span><img class="toggle-icon" src="../assets/images/q-plus.svg" alt="">
+                                                </span>
+                                            </button>
+                                            <div class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4">
+                                                <p class="fs-8">目前提供以下三種付款方式：</p>
+                                                <ol class="add-decimal w-100 fs-8">
+                                                    <li>貨到付款<ul class="add-disc">
+                                                            <li>訂購成功後，待收到包裹時再直接付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>信用卡付款（VISA、MasterCard、JCB）<ul class="add-disc">
+                                                            <li>在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>銀行轉帳<ul class="add-disc">
+                                                            <li>訂單確認後，系統會提供一組銀行帳號，請於 3 日內完成匯款，以確保訂單執行。</li>
+                                                            <li>若逾期未付款，訂單可能會自動取消。</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第三個 -->
+            <section>
+                <div class="container d-lg-none d-block">
+                    <div class="row justify-content-center justify-content-lg-between flex-column flex-lg-row mb-lg-5">
+                        <div class="col-lg-3 col-12">
+                            <ul class="nav nav-underline gap-1 flex-column" role="tablist">
+                                <!--mb-lg-0 mb-4  -->
+                                <li class="nav-item dashed-to-solid text-lg-start text-center mb-lg-0 mb-4"
+                                    role="presentation">
+                                    <button class="border-0 active bg-gray-50 text-color text-font lh-base"
+                                        id="home-tab" data-bs-toggle="tab" data-bs-target="#home-pane" type="button"
+                                        role="tab" aria-controls="home-pane" aria-selected="true"><span
+                                            class="me-2"><img src="../assets/images/fqa-gift-icon.svg" alt="fqa-payment-icon"></span>Products & Gifts
+                                    </button>
+                                </li>
+                                <!--  d-lg-block d-none -->
+                                <li class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none"
+                                    role="presentation">
+                                    <button class="border-0 bg-gray-50 text-color text-font lh-base" id="profile-tab"
+                                        data-bs-toggle="tab" data-bs-target="#profile-pane" type="button" role="tab"
+                                        aria-controls="profile-pane" aria-selected="false">Shipping & Delivery</button>
+                                </li>
+                                <!-- d-lg-block d-none -->
+                                <li class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none mb-lg-0 mb-3"
+                                    role="presentation">
+                                    <button class="border-0 bg-gray-50 text-color text-font lh-base" id="contact-tab"
+                                        data-bs-toggle="tab" data-bs-target="#contact-pane" type="button" role="tab"
+                                        aria-controls="contact-pane" aria-selected="false">Products & Gifts</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content col-12 col-lg-8">
+                            <div class="tab-pane fade show active">
+                                <div class="dropdown dropdown-push w-100">
+                                    <div class="d-flex gap-3">
+                                        <div class="d-lg-block d-none">
+                                            <img src="../assets/images/dropdown-question-01.png"
+                                                alt="dropdown-question-01">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <button
+                                                class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom text-start mb-3 px-5 py-14 text-primary-hover fs-8"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                data-plus-src="../assets/images/q-plus.svg"
+                                                data-minus-src="../assets/images/q-minus.svg">
+                                                想自己在家動手做，可以保持食材新鮮嗎？
+                                                <span><img class="toggle-icon" src="../assets/images/q-plus.svg" alt="">
+                                                </span>
+                                            </button>
+                                            <div class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4">
+                                                <p class="fs-8">目前提供以下三種付款方式：</p>
+                                                <ol class="add-decimal w-100 fs-8">
+                                                    <li>貨到付款<ul class="add-disc">
+                                                            <li>訂購成功後，待收到包裹時再直接付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>信用卡付款（VISA、MasterCard、JCB）<ul class="add-disc">
+                                                            <li>在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>銀行轉帳<ul class="add-disc">
+                                                            <li>訂單確認後，系統會提供一組銀行帳號，請於 3 日內完成匯款，以確保訂單執行。</li>
+                                                            <li>若逾期未付款，訂單可能會自動取消。</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <div class="d-lg-block d-none">
+                                            <img src="../assets/images/dropdown-question-01.png"
+                                                alt="dropdown-question-01">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <button
+                                                class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom text-start mb-3 px-5 py-14 text-primary-hover fs-8"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                data-plus-src="../assets/images/q-plus.svg"
+                                                data-minus-src="../assets/images/q-minus.svg">
+                                                如果想把料理包送給親友，可以加上禮物包裝嗎？
+                                                <span><img class="toggle-icon" src="../assets/images/q-plus.svg" alt="">
+                                                </span>
+                                            </button>
+                                            <div class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4">
+                                                <p class="fs-8">目前提供以下三種付款方式：</p>
+                                                <ol class="add-decimal w-100 fs-8">
+                                                    <li>貨到付款<ul class="add-disc">
+                                                            <li>訂購成功後，待收到包裹時再直接付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>信用卡付款（VISA、MasterCard、JCB）<ul class="add-disc">
+                                                            <li>在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>銀行轉帳<ul class="add-disc">
+                                                            <li>訂單確認後，系統會提供一組銀行帳號，請於 3 日內完成匯款，以確保訂單執行。</li>
+                                                            <li>若逾期未付款，訂單可能會自動取消。</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <div class="d-lg-block d-none">
+                                            <img src="../assets/images/dropdown-question-01.png"
+                                                alt="dropdown-question-01">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <button
+                                                class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                data-plus-src="../assets/images/q-plus.svg"
+                                                data-minus-src="../assets/images/q-minus.svg">
+                                                收到商品後需要如何保存？
+                                                <span><img class="toggle-icon" src="../assets/images/q-plus.svg" alt="">
+                                                </span>
+                                            </button>
+                                            <div class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4">
+                                                <p class="fs-8">目前提供以下三種付款方式：</p>
+                                                <ol class="add-decimal w-100 fs-8">
+                                                    <li>貨到付款<ul class="add-disc">
+                                                            <li>訂購成功後，待收到包裹時再直接付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>信用卡付款（VISA、MasterCard、JCB）<ul class="add-disc">
+                                                            <li>在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>銀行轉帳<ul class="add-disc">
+                                                            <li>訂單確認後，系統會提供一組銀行帳號，請於 3 日內完成匯款，以確保訂單執行。</li>
+                                                            <li>若逾期未付款，訂單可能會自動取消。</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <%- include('./layout/footer'); -%>
             <script type="module" src="../main.js"></script>
+            <script>
+                document.querySelectorAll('.dropdown-toggle-custom').forEach(button => {
+                    let isPlus = true;
+
+                    button.addEventListener('click', function () {
+                        const icon = this.querySelector('.toggle-icon');
+                        const plusSrc = this.dataset.plusSrc;
+                        const minusSrc = this.dataset.minusSrc;
+
+                        isPlus = !isPlus;
+                        if (isPlus) {
+                            icon.src = plusSrc;
+                        } else {
+                            icon.src = minusSrc;
+                        }
+                    });
+                });
+
+                // 當下拉選單關閉時，重置圖標
+                document.querySelector('.dropdown').forEach(dropdown => {
+                    dropdown.addEventListener('hidden.bs.dropdown', function () {
+                        const button = this.querySelector('.dropdown-toggle-custom');
+                        const icon = button.querySelector('.toggle-icon');
+                        const plusSrc = button.dataset.plusSrc;
+
+                        icon.src = plusSrc;
+
+                        // 重置 isPlus 狀態（這需要存在按鈕的 data 屬性中）
+                        button.isPlusState = true;
+                    });
+                });
+            </script>
 </body>
 
 </html>
