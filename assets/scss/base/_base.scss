@@ -74,3 +74,8 @@
     box-shadow: 0 0 0 4px rgba(176, 51, 43, 48%);
   }
 }
+
+// 隱藏dropdown箭頭
+#member-block .dropdown-toggle::after {
+  display: none !important;
+}
