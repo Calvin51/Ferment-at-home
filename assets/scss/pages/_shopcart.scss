@@ -11,8 +11,7 @@
 }
 
 .popProduct {
-  border-color: transparent;
-  max-width: 306px;
+  border: none;
 }
 
 .sizeChoose {
@@ -27,7 +26,7 @@
 }
 
 .shop-shadow {
-  box-shadow: 0px -2px 24px #0E1E253D;
+  box-shadow: 0px -2px 24px #0e1e253d;
 }
 
 /* 預設只顯示向下 */
@@ -48,9 +47,9 @@ button[aria-expanded="true"] .arrow-down {
 .button-left {
   position: absolute;
   top: 50%;
-  left: 0px;
-  transform: translateX(-50%);
-  /* 往外偏一半 */
+  left: 20px;
+  // transform: translateY(-50%);
+  /* 校正垂直置中 */
   z-index: 10;
 }
 
@@ -58,8 +57,8 @@ button[aria-expanded="true"] .arrow-down {
 .button-right {
   position: absolute;
   top: 50%;
-  right: 0px;
-  transform: translateX(50%);
-  /* 往外偏一半 */
+  right: 20px;
+  // transform: translateY(-50%);
+  /* 校正垂直置中 */
   z-index: 10;
 }
