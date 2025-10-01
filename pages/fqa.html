@@ -1251,7 +1251,7 @@
       });
 
       // 當下拉選單關閉時，重置圖標
-      document.querySelector(".dropdown").forEach((dropdown) => {
+      document.querySelectorAll(".dropdown").forEach((dropdown) => {
         dropdown.addEventListener("hidden.bs.dropdown", function () {
           const button = this.querySelector(".dropdown-toggle-custom");
           const icon = button.querySelector(".toggle-icon");
