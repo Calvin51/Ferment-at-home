@@ -1,0 +1,64 @@
+// *,
+// *:before,
+// *:after {
+//   outline: 1px solid red;
+// }
+
+.input-group .quantity-input {
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.popProduct {
+  border: none;
+}
+
+.sizeChoose {
+  border-radius: 1000px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  width: 80.67px;
+}
+
+.shop-btn {
+  padding: 18px;
+}
+
+.shop-shadow {
+  box-shadow: 0px -2px 24px #0e1e253d;
+}
+
+/* 預設只顯示向下 */
+.arrow-up {
+  display: none;
+}
+
+/* 展開時顯示向上圖，隱藏向下圖 */
+button[aria-expanded="true"] .arrow-up {
+  display: inline;
+}
+
+button[aria-expanded="true"] .arrow-down {
+  display: none;
+}
+
+/* 左邊箭頭 */
+.button-left {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  // transform: translateY(-50%);
+  /* 校正垂直置中 */
+  z-index: 10;
+}
+
+/* 右邊箭頭 */
+.button-right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  // transform: translateY(-50%);
+  /* 校正垂直置中 */
+  z-index: 10;
+}

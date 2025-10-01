@@ -1,4 +1,4 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.blurred-background {
+  backdrop-filter: blur(48px);
+  /* 需配合透明背景才能看到效果 */
 }

@@ -1,0 +1,81 @@
+// 標籤的基本樣式
+@import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap");
+
+.section-title {
+  font-family: "Darumadrop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+//按鈕樣式
+//填滿
+.btn-filled-primary {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--bs-white);
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+
+  //padding可自行在class修改
+  padding-top: 14.5px;
+  padding-bottom: 14.5px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-radius: 1000px;
+  border: 2px solid var(--bs-primary);
+
+  &:hover {
+    color: var(--bs-primary);
+    background-color: var(--bs-white);
+    border-color: var(--bs-primary);
+  }
+
+  &:focus {
+    color: var(--bs-primary);
+    background-color: var(--bs-white);
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 4px rgba(176, 51, 43, 48%);
+  }
+  //disabled時的樣式
+  &:disabled {
+    color: var(--bs-white);
+    background-color: var(--bs-primary-200);
+    border-color: var(--bs-primary-200);
+  }
+}
+// 外框線
+.btn-outline-primary {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--bs-primary);
+  background-color: var(--bs-white);
+  border-color: var(--bs-primary);
+
+  //padding可自行在class修改
+  padding-top: 14.5px;
+  padding-bottom: 14.5px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-radius: 1000px;
+  border: 2px solid var(--bs-primary);
+
+  &:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-primary-800);
+    border-color: var(--bs-primary-800);
+  }
+
+  &:focus {
+    color: var(--bs-white);
+    background-color: var(--bs-primary-800);
+    border-color: var(--bs-primary-800);
+    box-shadow: 0 0 0 4px rgba(176, 51, 43, 48%);
+  }
+}
+
+// 隱藏dropdown箭頭
+#member-block .dropdown-toggle::after {
+  display: none !important;
+}

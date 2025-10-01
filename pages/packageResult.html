@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>材料包生成結果</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container-fluid">
+      <section class="container px-0 py-6 py-md-10">
+        <!-- 標題區 -->
+        <div class="mb-6 mb-lg-11 position-relative">
+          <!-- 返回按鈕 -->
+          <a
+            href="./products.html"
+            class="d-none d-md-block link-gray-950 position-absolute top-50 start-0 translate-middle-y"
+          >
+            <div class="d-flex align-items-center">
+              <i class="bi bi-arrow-left me-2 fs-5 fw-bold"></i>
+              <h3 class="fs-8 fw-bold">重新生成</h3>
+            </div>
+          </a>
+          <!-- 返回按鈕small -->
+          <a
+            href="./products.html"
+            class="d-block d-md-none link-gray-950 fw-bold p-3 position-absolute top-0 start-0"
+          >
+            <i class="bi bi-arrow-left fs-6"></i>
+          </a>
+          <!-- 標題 -->
+          <div class="text-center">
+            <h1 class="section-title fs-2 fs-lg-1 text-primary">Your Pizza</h1>
+            <img src="/assets/images/line-small.png" alt="" />
+          </div>
+        </div>
+        <!-- 生成結果 -->
+        <div class="row gx-5">
+          <!-- 左側 -->
+          <div class="col col-md-8">
+            <div class="p-0 p-md-5 rounded-3 result-right container">
+              <!-- 披薩圖 -->
+              <div class="result-pizza mx-auto mb-3 mb-md-5">
+                <img
+                  src="/assets/images/pizza-seafood.png"
+                  alt="海鮮派對"
+                  class="d-block w-100"
+                />
+              </div>
+              <!-- 餅皮醬料起司 -->
+              <div class="row gx-3 gx-md-5 mb-3 mb-md-5">
+                <!-- 醬料 -->
+                <div class="col-3">
+                  <div class="text-center p-3 p-md-5 bg-gray-50 rounded-3">
+                    <img
+                      src="/assets/images/sauce-03.png"
+                      alt="紅醬"
+                      class="d-block w-100"
+                    />
+                    <h3 class="fs-8 fw-bold text-gray-950">紅醬</h3>
+                  </div>
+                </div>
+                <!-- 尺寸 -->
+                <div class="col-3">
+                  <div class="text-center p-3 p-md-5 bg-gray-50 rounded-3">
+                    <img
+                      src="/assets/images/pizza-8-inch.png"
+                      alt="8寸"
+                      class="d-block w-100"
+                    />
+                    <h3 class="fs-8 fw-bold text-gray-950">8寸</h3>
+                  </div>
+                </div>
+                <!-- 餅皮 -->
+                <div class="col-3">
+                  <div class="text-center p-3 p-md-5 bg-gray-50 rounded-3">
+                    <img
+                      src="/assets/images/pizza-crust-thin.png"
+                      alt="薄脆"
+                      class="d-block w-100"
+                    />
+                    <h3 class="fs-8 fw-bold text-gray-950">薄脆</h3>
+                  </div>
+                </div>
+                <!-- 起司 -->
+                <div class="col-3">
+                  <div class="text-center p-3 p-md-5 bg-gray-50 rounded-3">
+                    <img
+                      src="/assets/images/cheese-cheddar.png"
+                      alt="切達"
+                      class="d-block w-100"
+                    />
+                    <h3 class="fs-8 fw-bold text-gray-950">切達</h3>
+                  </div>
+                </div>
+              </div>
+              <!-- 食材圖 -->
+              <div class="bg-gray-50 rounded-3 text-center p-5">
+                <h2 class="fs-5 fw-bold mb-2">海鮮派對</h2>
+                <div class="d-flex justify-content-between">
+                  <div class="result-card-food">
+                    <img
+                      src="/assets/images/food-clams.png"
+                      alt="蛤蠣"
+                      class="d-block w-100"
+                    />
+                    <h3 class="fs-8 fw-bold text-gray-950">蛤蠣</h3>
+                  </div>
+                  <div class="result-card-food">
+                    <img
+                      src="/assets/images/food-squid.png"
+                      alt="魷魚"
+                      class="d-block w-100"
+                    />
+                    <h3 class="fs-8 fw-bold text-gray-950">魷魚</h3>
+                  </div>
+                  <div class="result-card-food">
+                    <img
+                      src="/assets/images/food-shrimp.png"
+                      alt="蝦仁"
+                      class="d-block w-100"
+                    />
+                    <h3 class="fs-8 fw-bold text-gray-950">蝦仁</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 右側 -->
+          <div class="col-md-4 d-none d-md-block align-self-start">
+            <div class="p-5 border border-4 border-secondary-300 rounded-3">
+              <h2 class="section-title fs-2 text-primary mb-5">Total</h2>
+              <!-- 價格清單 -->
+              <ul
+                class="list-unstyled text-gray-950 border-bottom border-2 border-gray-200"
+              >
+                <li class="d-flex mb-3">
+                  <p class="fs-8 me-auto">基本價格</p>
+                  <p class="fs-8">NT$ 320</p>
+                </li>
+                <li class="mb-3">
+                  <h3 class="fs-8 fw-bold mb-1">醬料</h3>
+                  <div class="d-flex">
+                    <p class="fs-8 me-auto">紅醬</p>
+                    <p class="fs-8">NT$ 0</p>
+                  </div>
+                </li>
+                <li class="mb-3">
+                  <h3 class="fs-8 fw-bold mb-1">尺寸</h3>
+                  <div class="d-flex">
+                    <p class="fs-8 me-auto">8寸</p>
+                    <p class="fs-8">NT$ 120</p>
+                  </div>
+                </li>
+                <li class="mb-3">
+                  <h3 class="fs-8 fw-bold mb-1">餅皮</h3>
+                  <div class="d-flex">
+                    <p class="fs-8 me-auto">薄脆</p>
+                    <p class="fs-8">NT$ 0</p>
+                  </div>
+                </li>
+                <li class="mb-3">
+                  <h3 class="fs-8 fw-bold mb-1">起司</h3>
+                  <div class="d-flex">
+                    <p class="fs-8 me-auto">切達</p>
+                    <p class="fs-8">NT$ 0</p>
+                  </div>
+                </li>
+                <li class="mb-5">
+                  <h3 class="fs-8 fw-bold mb-1">配料組合</h3>
+                  <div class="d-flex">
+                    <p class="fs-8 me-auto">海鮮派對(蛤蠣、魷魚、蝦仁)</p>
+                    <p class="fs-8">NT$ 100</p>
+                  </div>
+                </li>
+              </ul>
+              <!-- 總計 -->
+              <div class="d-flex mb-5 align-items-end">
+                <p class="fs-8 me-auto">總計</p>
+                <h3 class="section-title fs-5 text-primary">NT$ 520</h3>
+              </div>
+              <!-- 加入購物車按鈕 -->
+              <a href="./shopCart.html">
+                <button class="btn-filled-primary result-button" type="button">
+                  加入購物車
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- 右側small -->
+    <div class="d-block d-md-none container-fluid p-0 position-fixed bottom-0">
+      <div class="rounded-top-3 bg-secondary p-4">
+        <div>
+          <a
+            class="d-block mb-4"
+            data-bs-toggle="collapse"
+            href="#collapseResult"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            <div class="d-flex align-items-center">
+              <div class="me-auto">
+                <h3 class="fs-9 text-gray-950">總計</h3>
+                <div class="d-flex align-items-center">
+                  <h4 class="fs-11 me-1 text-gray-700">項目明細</h4>
+                  <i class="bi bi-chevron-down fs-7 text-gray-950"></i>
+                </div>
+              </div>
+              <div>
+                <h2 class="section-title fs-5 text-primary">NT$ 520</h2>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="collapseResult">
+            <div class="bg-secondary">
+              <!-- 價格清單 -->
+              <ul class="list-unstyled text-gray-950 mb-4">
+                <li class="d-flex mb-2">
+                  <p class="fs-9 me-auto">基本價格</p>
+                  <p class="fs-9">NT$ 320</p>
+                </li>
+                <li class="mb-2">
+                  <h3 class="fs-9 fw-bold mb-1">醬料</h3>
+                  <div class="d-flex">
+                    <p class="fs-9 me-auto">紅醬</p>
+                    <p class="fs-9">NT$ 0</p>
+                  </div>
+                </li>
+                <li class="mb-2">
+                  <h3 class="fs-9 fw-bold mb-1">尺寸</h3>
+                  <div class="d-flex">
+                    <p class="fs-9 me-auto">8寸</p>
+                    <p class="fs-9">NT$ 120</p>
+                  </div>
+                </li>
+                <li class="mb-2">
+                  <h3 class="fs-9 fw-bold mb-1">餅皮</h3>
+                  <div class="d-flex">
+                    <p class="fs-9 me-auto">薄脆</p>
+                    <p class="fs-9">NT$ 0</p>
+                  </div>
+                </li>
+                <li class="mb-2">
+                  <h3 class="fs-9 fw-bold mb-1">起司</h3>
+                  <div class="d-flex">
+                    <p class="fs-9 me-auto">切達</p>
+                    <p class="fs-9">NT$ 0</p>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="fs-9 fw-bold mb-1">配料組合</h3>
+                  <div class="d-flex">
+                    <p class="fs-9 me-auto">海鮮派對(蛤蠣、魷魚、蝦仁)</p>
+                    <p class="fs-9">NT$ 100</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="./shopCart.html">
+          <button class="btn-filled-primary result-button" type="button">
+            加入購物車
+          </button>
+        </a>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
