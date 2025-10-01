@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"/>
 </head>
 
 <body>
     <%- include('./layout/header'); -%>
-    <main class="container-fluid py-10">
-        <div class="container">
-            <!-- Pick Your Pizza標題 -->
-            <div class="text-center mb-11">
-                <h1 class="section-title text-primary">Pick Your Pizza</h1>
-                <img src="/assets/images/line-small.png" alt="底線"/>
-            </div>
-            <!-- Step1選擇口味 -->
-            <div class="row pb-8">
-                <div class="col-3">
-                    <div class="d-flex align-items-center section-title">
-                        <h1 class="me-2">Step</h1>
-                        <p class="step-circle rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;">1</p>
-                    </div>
+        <main class="container-fluid">
+            <div class="container py-6 py-md-10">
+                <!-- Pick Your Pizza標題 -->
+                <div class="text-center text-center mb-6 mb-md-11">
+                    <h1 class="section-title fs-2 fs-md-1 text-primary">Pick Your Pizza</h1>
+                    <img src="/assets/images/line-small.png" alt="底線" />
                 </div>
-                <div class="col-9">
-                    <div>
-                        <div class="d-flex align-items-center mb-3">
-                            <p class="fs-5 fw-bold my-2 me-2">選擇口味</p>
-                            <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg" alt="打勾圖示">
+                <!-- Step1選擇口味 -->
+                <div class="row flex-wrap flex-md-nowrap mb-8 px-2">
+                    <!-- Step1 -->
+                    <div class="col-12 col-md-3 mb-3 px-0">
+                        <div class="d-flex align-items-center section-title">
+                            <h1 class="fs-2 fs-md-1 me-2">Step</h1>
+                            <div class="step">
+                                <div class="step-circle rounded-circle bg-primary"></div>
+                                <p class="step-number text-white fs-5 fs-md-2">1</p>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-4">
+                    </div>
+                    <!-- 選擇口味 -->
+                    <div class="col-12 col-md-9 px-0">
+                        <div class="d-flex align-items-center mb-3">
+                            <p class="fs-7 fs-md-5 fw-bold py-3 py-md-2 me-2">選擇口味</p>
+                            <div class="check">
+                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg"
+                                    alt="打勾圖示">
+                            </div>
+                        </div>
+                        <div class="row flex-nowrap overflow-x-auto">
+                            <div class="col-12 col-md-4">
                                 <div class="card-body text-center p-5 rounded-4">
                                     <div>
-                                        <div class="card-photo">
-                                            <div class="d-flex align-items-start justify-content-between">
-                                                <div class="card-check rounded-4">
-                                                    <a href="#" class="check text-white">
-                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                                    </a>
-                                                </div>
+                                        <div class="card-photo justify-content-center">
+                                            <div class="card-check rounded-4">
+                                                <a href="#" class="check text-white">
+                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                        alt="打勾圖示">
+                                                </a>
                                             </div>
                                             <img src="../assets/images/sauce-01.png" alt="青醬" class="mw-100">
                                         </div>
@@ -49,104 +56,113 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 products-md-col">
+                            <div class="col-12 col-md-4">
                                 <div class="card-body text-center p-5 rounded-4">
-                                    <div>
-                                        <div class="card-photo">
-                                            <div class="card-check rounded-4">
-                                                <a href="#" class="check text-white">
-                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                                </a>
-                                            </div>
-                                            <img src="../assets/images/sauce-02.png" alt="白醬" class="mw-100">
+                                    <div class="card-photo">
+                                        <div class="card-check rounded-4">
+                                            <a href="#" class="check text-white">
+                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                    alt="打勾圖示">
+                                            </a>
                                         </div>
-                                        <h5 class="fw-bold mb-2">白醬</h5>
-                                        <p>奶香溫醇，適合雞肉</p>
+                                        <img src="../assets/images/sauce-02.png" alt="白醬" class="mw-100">
                                     </div>
+                                    <h5 class="fw-bold mb-2">白醬</h5>
+                                    <p>奶香溫醇，適合雞肉</p>
                                 </div>
                             </div>
-                            <div class="col-4 products-md-col">
+                            <div class="col-12 col-md-4">
                                 <div class="card-body text-center p-5 rounded-4">
-                                    <div>
-                                        <div class="card-photo">
-                                            <div class="card-check rounded-4">
-                                                <a href="#" class="check text-white">
-                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                                </a>
-                                            </div>
-                                            <img src="../assets/images/sauce-03.png" alt="紅醬" class="mw-100">
+                                    <div class="card-photo">
+                                        <div class="card-check rounded-4">
+                                            <a href="#" class="check text-white">
+                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                    alt="打勾圖示">
+                                            </a>
                                         </div>
-                                        <h5 class="fw-bold mb-2">紅醬</h5>
-                                        <p>經典蕃茄酸甜，適合所有食材</p>
+                                        <img src="../assets/images/sauce-03.png" alt="紅醬" class="mw-100">
                                     </div>
+                                    <h5 class="fw-bold mb-2">紅醬</h5>
+                                    <p>經典蕃茄酸甜，適合所有食材</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Step2選擇尺寸餅皮起司 -->
-            <div class="row pb-8">
-                <div class="col-3">
-                    <div class="d-flex align-items-center section-title">
-                        <h1 class="me-2">Step</h1>
-                        <p class="step-circle rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;">2</p>
+                <!-- Step2選擇尺寸餅皮起司 -->
+                <div class="row flex-wrap flex-md-nowrap mb-8 px-2">
+                    <!-- Step2 -->
+                    <div class="col-12 col-md-3 mb-3 px-0">
+                        <div class="d-flex align-items-center section-title">
+                            <h1 class="fs-2 fs-md-1 me-2">Step</h1>
+                            <div class="step">
+                                <div class="step-circle rounded-circle bg-primary"></div>
+                                <p class="step-number text-white fs-5 fs-md-2">2</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-9">
-                    <div>
+                    <!-- 選擇尺寸餅皮起司 -->
+                    <div class="col-12 col-md-9 px-0">
                         <!-- 尺寸 -->
-                        <div class="pb-5">
                         <div class="d-flex align-items-center mb-3">
-                            <p class="fs-5 fw-bold me-2">選擇尺寸</p>
-                            <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg" alt="打勾圖示">
+                            <p class="fs-7 fs-md-5 fw-bold py-3 py-md-2 me-2">選擇尺寸</p>
+                            <div class="check">
+                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg"
+                                    alt="打勾圖示">
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-4">
+                        <div class="row flex-nowrap overflow-x-auto mb-3 mb-md-5">
+                            <div class="col-12 col-md-4">
                                 <div class="card-body text-center p-5 rounded-4">
                                     <div>
-                                        <div class="card-photo">
+                                        <div class="card-photo justify-content-center">
                                             <h2 class="selling-price section-title">+80</h2>
                                             <div class="card-check rounded-4">
                                                 <a href="#" class="check text-white">
-                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                        alt="打勾圖示">
                                                 </a>
                                             </div>
-                                            <img src="../assets/images/pizza-inch/pizza-6-inch.png" alt="6寸" class="mw-100">
+                                            <img src="../assets/images/pizza-inch/pizza-6-inch.png" alt="6寸"
+                                                class="mw-100">
                                         </div>
                                         <h5 class="fw-bold mb-2">6寸</h5>
                                         <p>適合 1-2 人</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-md-4">
                                 <div class="card-body text-center p-5 rounded-4">
                                     <div>
-                                        <div class="card-photo">
+                                        <div class="card-photo justify-content-center">
                                             <h2 class="selling-price section-title">+120</h2>
                                             <div class="card-check rounded-4">
                                                 <a href="#" class="check text-white">
-                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                        alt="打勾圖示">
                                                 </a>
                                             </div>
-                                            <img src="../assets/images/pizza-inch/pizza-8-inch.png" alt="8寸" class="mw-100">
+                                            <img src="../assets/images/pizza-inch/pizza-8-inch.png" alt="8寸"
+                                                class="mw-100">
                                         </div>
                                         <h5 class="fw-bold mb-2">8寸</h5>
                                         <p>適合 3-4 人</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-md-4">
                                 <div class="card-body text-center p-5 rounded-4">
                                     <div>
-                                        <div class="card-photo">
+                                        <div class="card-photo justify-content-center">
                                             <h2 class="selling-price section-title">+150</h2>
                                             <div class="card-check rounded-4">
                                                 <a href="#" class="check text-white">
-                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
+                                                    <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                        alt="打勾圖示">
                                                 </a>
                                             </div>
-                                            <img src="../assets/images/pizza-inch/pizza-12-inch.png" alt="12寸" class="mw-100">
+                                            <img src="../assets/images/pizza-inch/pizza-12-inch.png" alt="6寸"
+                                                class="mw-100">
                                         </div>
                                         <h5 class="fw-bold mb-2">12寸</h5>
                                         <p>適合 4-6 人</p>
@@ -154,225 +170,232 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
                         <!-- 餅皮 -->
-                        <div class="pb-5">
-                            <div class="d-flex align-items-center mb-3">
-                                <p class="fs-5 fw-bold me-2">選擇餅皮</p>
-                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg" alt="打勾圖示">
+                        <div class="d-flex align-items-center mb-3">
+                            <p class="fs-7 fs-md-5 fw-bold py-3 py-md-2 me-2">選擇餅皮</p>
+                            <div class="check">
+                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg"
+                                    alt="打勾圖示">
                             </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="card-body text-center p-5 rounded-4">
-                                        <div>
-                                            <div class="card-photo">
-                                                <div class="card-check rounded-4">
-                                                    <a href="#" class="check text-white">
-                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                                    </a>
-                                                </div>
-                                                <img src="../assets/images/pizza-crust-thin.png" alt="薄脆" class="mw-100">
-                                            </div>
-                                            <h5 class="fw-bold mb-2">薄脆</h5>
-                                            <p>外酥內嫩</p>
+                        </div>
+                        <div class="row flex-nowrap overflow-x-auto mb-3 mb-md-5">
+                            <div class="col-12 col-md-4">
+                                <div class="card-body text-center p-5 rounded-4">
+                                    <div class="card-photo justify-content-center">
+                                        <div class="card-check rounded-4">
+                                            <a href="#" class="check text-white">
+                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                    alt="打勾圖示">
+                                            </a>
                                         </div>
+                                        <img src="../assets/images/pizza-crust-thin.png" alt="薄脆" class="mw-100">
                                     </div>
+                                    <h5 class="fw-bold mb-2">薄脆</h5>
+                                    <p>外酥內嫩</p>
                                 </div>
-                                <div class="col-4">
-                                    <div class="card-body text-center p-5 rounded-4">
-                                        <div>
-                                            <div class="card-photo">
-                                                <div class="card-check rounded-4">
-                                                    <a href="#" class="check text-white">
-                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                                    </a>
-                                                </div>
-                                                <img src="../assets/images/pizza-crust-thick.png" alt="厚Q" class="mw-100">
-                                            </div>
-                                            <h5 class="fw-bold mb-2">厚Q</h5>
-                                            <p>扎實嚼勁</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card-body text-center p-5 rounded-4">
+                                    <div class="card-photo justify-content-center">
+                                        <div class="card-check rounded-4">
+                                            <a href="#" class="check text-white">
+                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                    alt="打勾圖示">
+                                            </a>
                                         </div>
+                                        <img src="../assets/images/pizza-crust-thick.png" alt="厚Q" class="mw-100">
                                     </div>
+                                    <h5 class="fw-bold mb-2">厚Q</h5>
+                                    <p>扎實嚼勁</p>
                                 </div>
-                                <div class="col-4">
-                                    <div class="card-body text-center p-5 rounded-4">
-                                        <div>
-                                            <div class="card-photo">
-                                                <div class="card-check rounded-4">
-                                                    <a href="#" class="check text-white">
-                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                                    </a>
-                                                </div>
-                                                <img src="../assets/images/pizza-crust-stuffed.png" alt="芝心" class="mw-100">
-                                            </div>
-                                            <h5 class="fw-bold mb-2">芝心</h5>
-                                            <p>香濃牽絲</p>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card-body text-center p-5 rounded-4">
+                                    <div class="card-photo justify-content-center">
+                                        <div class="card-check rounded-4">
+                                            <a href="#" class="check text-white">
+                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                    alt="打勾圖示">
+                                            </a>
                                         </div>
+                                        <img src="../assets/images/pizza-crust-stuffed.png" alt="芝心" class="mw-100">
                                     </div>
+                                    <h5 class="fw-bold mb-2">芝心</h5>
+                                    <p>香濃牽絲</p>
                                 </div>
                             </div>
                         </div>
                         <!-- 起司 -->
-                        <div>
-                            <div class="d-flex align-items-center mb-3">
-                                <p class="fs-5 fw-bold me-2">選擇起司</p>
-                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg" alt="打勾圖示">
-                            </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="card-body text-center p-5 rounded-4">
-                                        <div>
-                                            <div class="card-photo">
-                                                <div class="card-check rounded-4">
-                                                    <a href="#" class="check text-white">
-                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                                    </a>
-                                                </div>
-                                                <img src="../assets/images/cheese-mozzarella.png" alt="莫札瑞拉" class="mw-100">
-                                            </div>
-                                            <h5 class="fw-bold mb-2">莫札瑞拉</h5>
-                                            <p>經典不敗</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="card-body text-center p-5 rounded-4">
-                                        <div>
-                                            <div class="card-photo">
-                                                <div class="card-check rounded-4">
-                                                    <a href="#" class="check text-white">
-                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                                    </a>
-                                                </div>
-                                                <img src="../assets/images/cheese-cheddar.png" alt="切達" class="mw-100">
-                                            </div>
-                                            <h5 class="fw-bold mb-2">切達</h5>
-                                            <p>香醇濃郁</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="card-body text-center p-5 rounded-4">
-                                        <div>
-                                            <div class="card-photo">
-                                                <div class="card-check rounded-4">
-                                                    <a href="#" class="check text-white">
-                                                        <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                                    </a>
-                                                </div>
-                                                <img src="../assets/images/cheese-parmesan.png" alt="帕馬森" class="mw-100">
-                                            </div>
-                                            <h5 class="fw-bold mb-2">帕馬森</h5>
-                                            <p>鹹香風味</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Step3選擇配料組合 -->
-            <div class="row pb-8">
-                <div class="col-3">
-                    <div class="d-flex align-items-center section-title">
-                        <h1 class="me-2">Step</h1>
-                        <p class="step-circle rounded-circle d-flex align-items-center justify-content-center"
-                            style="width:48px;height:48px;">3</p>
-                    </div>
-                </div>
-                <div class="col-9">
-                    <div>
                         <div class="d-flex align-items-center mb-3">
-                            <p class="fs-5 fw-bold me-2">選擇配料組合</p>
-                            <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg" alt="打勾圖示">
+                            <p class="fs-7 fs-md-5 fw-bold py-3 py-md-2 me-2">選擇起司</p>
+                            <div class="check">
+                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg"
+                                    alt="打勾圖示">
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="card-bodycombin p-5 rounded-4">
-                                    <div>
-                                        <div class="d-flex justify-content-between align-items-center pb-5">
-                                            <h2 class="selling-pricecombin section-title">+100</h2>
-                                            <div class="card-checkcombin text-primary rounded-4">
-                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                            </div>
+                        <div class="row flex-nowrap overflow-x-auto">
+                            <div class="col-12 col-md-4">
+                                <div class="card-body text-center p-5 rounded-4">
+                                    <div class="card-photo justify-content-center">
+                                        <div class="card-check rounded-4">
+                                            <a href="#" class="check text-white">
+                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                    alt="打勾圖示">
+                                            </a>
                                         </div>
-                                        <div class="text-center">
-                                            <h5 class="fw-bold mb-2">海鮮派對</h5>
-                                            <p class="mb-2">大海的滋味一次擁有！</p>
-                                            <div class="d-flex">
-                                                <div class="product-combin">
-                                                    <img src="../assets/images/food-clams.png" alt="蛤蠣" class="mw-100">
-                                                    <p class="fs-10 fw-bold">蛤蠣</p>
-                                                </div>
-                                                <div class="product-combin">
-                                                    <img src="../assets/images/food-squid.png" alt="魷魚" class="mw-100">
-                                                    <p class="fs-10 fw-bold">魷魚</p>
-                                                </div>
-                                                <div class="product-combin">
-                                                    <img src="../assets/images/food-shrimp.png" alt="蝦仁" class="mw-100">
-                                                    <p class="fs-10 fw-bold">蝦仁</p>
-                                                </div>
+                                        <img src="../assets/images/cheese-mozzarella.png" alt="莫札瑞拉" class="mw-100">
+                                    </div>
+                                    <h5 class="fw-bold mb-2">莫札瑞拉</h5>
+                                    <p>經典不敗</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card-body text-center p-5 rounded-4">
+                                    <div class="card-photo justify-content-center">
+                                        <div class="card-check rounded-4">
+                                            <a href="#" class="check text-white">
+                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                    alt="打勾圖示">
+                                            </a>
+                                        </div>
+                                        <img src="../assets/images/cheese-cheddar.png" alt="切達" class="mw-100">
+                                    </div>
+                                    <h5 class="fw-bold mb-2">切達</h5>
+                                    <p>香醇濃郁</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card-body text-center p-5 rounded-4">
+                                    <div class="card-photo justify-content-center">
+                                        <div class="card-check rounded-4">
+                                            <a href="#" class="check text-white">
+                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                    alt="打勾圖示">
+                                            </a>
+                                        </div>
+                                        <img src="../assets/images/cheese-parmesan.png" alt="帕馬森" class="mw-100">
+                                    </div>
+                                    <h5 class="fw-bold mb-2">帕馬森</h5>
+                                    <p>鹹香風味</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step3選擇配料組合 -->
+                <div class="row flex-wrap flex-md-nowrap px-2">
+                    <!-- Step3 -->
+                    <div class="col-12 col-md-3 mb-3">
+                        <div class="d-flex align-items-center section-title">
+                            <h1 class="fs-2 fs-md-1 me-2">Step</h1>
+                            <div class="step">
+                                <div class="step-circle rounded-circle bg-primary"></div>
+                                <p class="step-number text-white fs-5 fs-md-2">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 選擇配料組合 -->
+                    <div class="col-12 col-md-9 px-0">
+                        <!-- 配料組合 -->
+                        <div class="d-flex align-items-center mb-3">
+                            <p class="fs-7 fs-md-5 fw-bold py-3 py-md-2 me-2">選擇配料組合</p>
+                            <div class="check">
+                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill - gray.svg"
+                                    alt="打勾圖示">
+                            </div>
+                        </div>
+                        <div class="row flex-nowrap overflow-x-auto mb-3 mb-md-5">
+                            <!-- 海鮮派對 -->
+                            <div class="col-12 col-md-4">
+                                <div class="card-body text-center p-5 rounded-4">
+                                    <div class="card-photo justify-content-center">
+                                        <h2 class="selling-price section-title">+100</h2>
+                                        <div class="card-check rounded-4">
+                                            <a href="#" class="check text-white">
+                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                    alt="打勾圖示">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center pt-11">
+                                        <h5 class="fw-bold mb-2">海鮮派對</h5>
+                                        <p class="mb-2">大海的滋味一次擁有！</p>
+                                        <div class="d-flex">
+                                            <div>
+                                                <img src="../assets/images/food-clams.png" alt="蛤蠣" class="mw-100">
+                                                <p class="fs-10 fw-bold">蛤蠣</p>
+                                            </div>
+                                            <div>
+                                                <img src="../assets/images/food-squid.png" alt="魷魚" class="mw-100">
+                                                <p class="fs-10 fw-bold">魷魚</p>
+                                            </div>
+                                            <div>
+                                                <img src="../assets/images/food-shrimp.png" alt="蝦仁" class="mw-100">
+                                                <p class="fs-10 fw-bold">蝦仁</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="card-bodycombin p-5 rounded-4">
-                                    <div>
-                                        <div class="d-flex justify-content-between align-items-center pb-5">
-                                            <h2 class="selling-pricecombin section-title">+120</h2>
-                                            <div class="card-checkcombin text-primary rounded-4">
-                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                            </div>
+                            <!-- 經典組合 -->
+                            <div class="col-12 col-md-4">
+                                <div class="card-body text-center p-5 rounded-4">
+                                    <div class="card-photo justify-content-center">
+                                        <h2 class="selling-price section-title">+120</h2>
+                                        <div class="card-check rounded-4">
+                                            <a href="#" class="check text-white">
+                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                    alt="打勾圖示">
+                                            </a>
                                         </div>
-                                        <div class="text-center">
-                                            <h5 class="fw-bold mb-2">經典組合</h5>
-                                            <p class="mb-2">大家都愛吃的好選擇</p>
-                                            <div class="d-flex">
-                                                <div class="product-combin">
-                                                    <img src="../assets/images/food-mushroom.png" alt="蘑菇" class="mw-100">
-                                                    <p class="fs-10 fw-bold">蘑菇</p>
-                                                </div>
-                                                <div class="product-combin">
-                                                    <img src="../assets/images/food-shrimp.png" alt="蝦仁" class="mw-100">
-                                                    <p class="fs-10 fw-bold">蝦仁</p>
-                                                </div>
-                                                <div class="product-combin">
-                                                    <img src="../assets/images/food-bacon.png" alt="培根" class="mw-100">
-                                                    <p class="fs-10 fw-bold">培根</p>
-                                                </div>
+                                    </div>
+                                    <div class="text-center pt-11">
+                                        <h5 class="fw-bold mb-2">經典組合</h5>
+                                        <p class="mb-2">大家都愛吃的好選擇</p>
+                                        <div class="d-flex">
+                                            <div>
+                                                <img src="../assets/images/food-mushroom.png" alt="蘑菇" class="mw-100">
+                                                <p class="fs-10 fw-bold">蘑菇</p>
+                                            </div>
+                                            <div>
+                                                <img src="../assets/images/food-shrimp.png" alt="蝦仁" class="mw-100">
+                                                <p class="fs-10 fw-bold">蝦仁</p>
+                                            </div>
+                                            <div>
+                                                <img src="../assets/images/food-bacon.png" alt="培根" class="mw-100">
+                                                <p class="fs-10 fw-bold">培根</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="card-bodycombin p-5 rounded-4">
-                                    <div>
-                                        <div class="d-flex justify-content-between align-items-center pb-5">
-                                            <h2 class="selling-pricecombin section-title">+180</h2>
-                                            <div class="card-checkcombin text-primary rounded-4">
-                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg" alt="打勾圖示">
-                                            </div>
+                            <!-- 營養均衡 -->
+                            <div class="col-12 col-md-4">
+                                <div class="card-body text-center p-5 rounded-4">
+                                    <div class="card-photo justify-content-center">
+                                        <h2 class="selling-price section-title">+180</h2>
+                                        <div class="card-check rounded-4">
+                                            <a href="#" class="check text-white">
+                                                <img src="../assets/images/Check-2-Fill--Streamline-Mingcute-Fill.svg"
+                                                    alt="打勾圖示">
+                                            </a>
                                         </div>
-                                        <div class="text-center">
-                                            <h5 class="fw-bold mb-2">營養均衡</h5>
-                                            <p class="mb-2">什麼肉菜都來一點</p>
-                                            <div class="d-flex">
-                                                <div class="product-combin">
-                                                    <img src="../assets/images/food-chicken.png" alt="雞肉" class="mw-100">
-                                                    <p class="fs-10 fw-bold">雞肉</p>
-                                                </div>
-                                                <div class="product-combin">
-                                                    <img src="../assets/images/food-shrimp.png" alt="蝦仁" class="mw-100">
-                                                    <p class="fs-10 fw-bold">蝦仁</p>
-                                                </div>
-                                                <div class="product-combin">
-                                                    <img src="../assets/images/food-spinach.png" alt="菠菜" class="mw-100">
-                                                    <p class="fs-10 fw-bold">菠菜</p>
-                                                </div>
+                                    </div>
+                                    <div class="text-center pt-11">
+                                        <h5 class="fw-bold mb-2">營養均衡</h5>
+                                        <p class="mb-2">什麼肉菜都來一點</p>
+                                        <div class="d-flex">
+                                            <div>
+                                                <img src="../assets/images/food-chicken.png" alt="雞肉" class="mw-100">
+                                                <p class="fs-10 fw-bold">雞肉</p>
+                                            </div>
+                                            <div>
+                                                <img src="../assets/images/food-shrimp.png" alt="蝦仁" class="mw-100">
+                                                <p class="fs-10 fw-bold">蝦仁</p>
+                                            </div>
+                                            <div>
+                                                <img src="../assets/images/food-spinach.png" alt="菠菜" class="mw-100">
+                                                <p class="fs-10 fw-bold">菠菜</p>
                                             </div>
                                         </div>
                                     </div>
@@ -382,12 +405,48 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <a href="./shopCart.html"><button class="btn-filled-primary" style="width: 258px;" type="button">購物車</button></a>
+        </main>
+        <!-- 總計 -->
+        <div class="d-none d-md-block container-fluid fixed-bottom p-0 bottom-0">
+            <div class="product-shadow bg-secondary py-4">
+                <div class="container">
+                    <div class="d-flex align-items-center">
+                        <div class="fs-9 fs-md-8 me-3">總計</div>
+                        <div class="section-title text-primary fs-5 me-auto">NT$ 520</div>
+                        <a href="packageResult.html">
+                            <button class="btn-filled-primary" type="button">
+                                <div class="d-flex align-items-center">
+                                    <span class="me-2">生成您的披薩組合</span>
+                                    <i class="bi bi-arrow-right fs-6"></i>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+        <div class="d-md-none container-fluid p-0 position-fixed bottom-0">
+            <div class="rounded-top-3 product-shadow bg-secondary p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="me-auto">
+                        <h3 class="fs-9 text-gray-950">總計</h3>
+                    </div>
+                    <div>
+                        <h2 class="section-title fs-5 text-primary">NT$ 520</h2>
+                    </div>
+                </div>
+                <a href="packageResult.html">
+                    <button class="btn-filled-primary w-100" type="button">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="me-2">生成您的披薩組合</span>
+                            <i class="bi bi-arrow-right fs-6"></i>
+                        </div>
+                    </button>
+                </a>
+            </div>
+        </div>
     <%- include('./layout/footer'); -%>
-    <script type="module" src="../main.js"></script>
+        <script type="module" src="../main.js"></script>
 </body>
+
 </html>

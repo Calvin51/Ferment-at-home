@@ -1,49 +1,33 @@
-.step-circle {
-  color: var(--bs-white);
-  background-color: var(--bs-primary);
-  font-size: 40px;
-  padding: 12px 13.5px 12px 13.5px;
-}
-
-.card-body {
-  background-color: var(--bs-gray-50);
-
-  &:hover {
-    background-color: var(--bs-secondary-100);
-  }
-}
-
-.card-photo {
+// 步驟圈圈
+.step {
     position: relative;
-    display: flex;
-}
- 
-
-.selling-price {
-  position: absolute;
-  color: var(--bs-primary);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
 }
 
-.card-check {
-  position: absolute;
-  right: 0px;
-  padding: 8px;
-  background-color: var(--bs-gray-200);
+.step-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
-    &:hover {
-        background-color: var(--bs-gray-200);
-    }
-    
-    &:active {
-        background-color: var(--bs-primary);
-    }
-    &:focus {
-        background-color: var(--bs-primary);
+.step-number {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+    .step {
+        width: 48px;
+        height: 48px;
     }
 }
 
-
-.card-bodycombin {
+// 產品卡片
+.card-body {
     background-color: var(--bs-gray-50);
 
     &:hover {
@@ -51,11 +35,21 @@
     }
 }
 
-.selling-pricecombin {
+.card-photo {
+    position: relative;
+}
+
+// 左上售價
+.selling-price {
+    position: absolute;
+    left: 0px;
     color: var(--bs-primary);
 }
 
-.card-checkcombin {
+// 卡片上圓勾勾
+.card-check {
+    position: absolute;
+    right: 0px;
     padding: 8px;
     background-color: var(--bs-gray-200);
 
@@ -72,19 +66,17 @@
     }
 }
 
-.product-combin {
-    width: 86px;
+.check {
+    width: 19.96px;
 }
 
-// @media(max-width:767px) {
-//     .product-md-row {
-//         margin-left: -8px;
-//         margin-right: -8px;
-//     }
+@media (min-width: 768px) {
+    .check {
+        width: 23.29px;
+    }
+}
 
-//     .products-md-col {
-//         max-width: 240px;
-//         padding-left: 8px;
-//         padding-right: 8px;
-//     }
-// }
+// 總計陰影
+.product-shadow {
+    box-shadow: 0px -2px 24px #0E1E253D;
+}
