@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script type="module" crossorigin src="/Ferment-at-home/assets/main-4IA40H5i.js"></script>
+    <link rel="stylesheet" crossorigin href="/Ferment-at-home/assets/main-DqkcW9eV.css">
+  </head>
+
+  <body>
+    <div class="position-sticky top-0 z-3">
+  <nav
+    class="navbar navbar-expand-md py-4 bg-white blurred-background"
+    style="--bs-bg-opacity: 0.04"
+  >
+    <div class="container-lg">
+      <!-- Logo -->
+      <a class="navbar-brand py-0" href="./index.html">
+        <img
+          src="/Ferment-at-home/assets/logo-Bvgh-6Od.png"
+          alt="Ferment-at-home"
+          class="d-none d-lg-block"
+        />
+        <img
+          src="/Ferment-at-home/assets/logo-small-llwXGVwX.png"
+          alt="Ferment-at-home"
+          class="d-lg-none"
+        />
+      </a>
+
+      <!-- 手機版漢堡選單 -->
+      <button
+        class="navbar-toggler border border-2 border-primary rounded-circle p-3"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="text-primary fs-6"><i class="bi bi-list"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- 未登入導覽連結 -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item me-5">
+            <a class="nav-link fw-bold" href="./products.html">商品列表</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link fw-bold" href="./about.html">品牌故事</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link fw-bold" href="./fqa.html">常見問題</a>
+          </li>
+        </ul>
+
+        <!-- 未登入狀態 -->
+        <div id="auth-block">
+          <button
+            id="loginBtn"
+            class="btn-filled-primary d-none d-lg-block"
+            type="button"
+          >
+            登入/註冊
+          </button>
+        </div>
+
+        <!-- 已登入狀態 -->
+        <div id="member-block" class="dropdown d-none ms-3">
+          <a
+            class="d-flex align-items-center dropdown-toggle"
+            href="#"
+            id="memberMenu"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="/Ferment-at-home/assets/profile-pic-1-BgLO1m_N.svg"
+              class="rounded-circle"
+              width="32"
+              height="32"
+              alt="會員頭像"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end mx-4 my-2"
+            aria-labelledby="memberMenu"
+          >
+            <li>
+              <a class="dropdown-item my-3" href="#"
+                ><i class="bi bi-person-circle me-1"></i> 個人資料管理</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item my-3" href="#"
+                ><i class="bi bi-receipt me-1"></i> 訂單記錄</a
+              >
+            </li>
+            <li>
+              <a id="logoutBtn" class="dropdown-item my-3" href="#"
+                ><i class="bi bi-box-arrow-right me-1"></i> 登出</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Bootstrap Icons -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+/>
+<link rel="stylesheet" href="all.css" />
+<script>
+  const loginBtn = document.getElementById("loginBtn");
+  const logoutBtn = document.getElementById("logoutBtn");
+  const authBlock = document.getElementById("auth-block");
+  const memberBlock = document.getElementById("member-block");
+
+  // 模擬登入
+  if (loginBtn) {
+    loginBtn.addEventListener("click", () => {
+      authBlock.classList.add("d-none");
+      memberBlock.classList.remove("d-none");
+    });
+  }
+
+  // 模擬登出
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+      memberBlock.classList.add("d-none");
+      authBlock.classList.remove("d-none");
+    });
+  }
+</script>
+    <main class="bg-gray-50 py-lg-10 py-5">
+      <section>
+        <div class="container">
+          <div class="text-center pb-lg-11 pb-7">
+            <h2 class="h2 fw-bold answer-font">FAQ</h2>
+            <img
+              class="mx-auto"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAKCAYAAAAjBNk8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG3SURBVHgB7VZBTsJAFH1/Csa40N7A3oB6Apu4kR3eQI7gzoWGsFCXHkFvIK5IXGi9QblBuQGJiUEp8/0zLQhKgXbdlxQmnT///XnT9j/CH3C/48HZcWXog/gQzN5SgFIRJnpAzevw39qnjou9WgBFjfk6ohiaB/hMQjrrjrACGWdg+WYgGmGqh9CQNUmMMUZ56/Ng69mF+3un5m21cJxE23KRJerfyQaSjhTdAi8SbkQo8VGWKYARfVM8yZXwO+qqAa39EpyGLM6fYrd4vlV55ODs3uQgldknmzqDbLKH6fcFNbsxpeLpN5HRQ4UikDdkcqREvE4lXim4cOoPSsQ7R4Wy8EVAFPowV1iCq+RjGaFCSfCjQuK0UT2FZSBNJOku2Bh9L6NWOmdtQiStO7Y+TlEqMGtPfgNp58auuLmJQSGMZbGpbPtfF485J3NPLEPGJY2NyEvH5r9so1u0PDyy9mQdUgu02Y5NJ21rY1AS/Hp7LCbXs6Ky8UpykQ7p5GqYGz/VIj75qVeTeHNAjhjzj6/nbY2rNcf79YO8+Tz+ouCXGx81OhDP6qeHKTVDatVOSKeXg1ncD5i5uHTd7HCrAAAAAElFTkSuQmCC"
+              alt="line-small"
+            />
+          </div>
+          <div class="row pb-100">
+            <div class="col-lg-4 col-12 mb-5">
+              <div class="text-center pb-3">
+                <img
+                  class="img-fluid"
+                  src="data:image/svg+xml,%3csvg%20width='56'%20height='56'%20viewBox='0%200%2056%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='56'%20height='56'%20rx='16'%20fill='%23B0332B'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M20.5007%2039.6666C21.1637%2039.6666%2021.7996%2039.93%2022.2684%2040.3988C22.7373%2040.8677%2023.0007%2041.5035%2023.0007%2042.1666C23.0007%2042.8296%2022.7373%2043.4655%2022.2684%2043.9344C21.7996%2044.4032%2021.1637%2044.6666%2020.5007%2044.6666C19.8376%2044.6666%2019.2017%2044.4032%2018.7329%2043.9344C18.264%2043.4655%2018.0007%2042.8296%2018.0007%2042.1666C18.0007%2041.5035%2018.264%2040.8677%2018.7329%2040.3988C19.2017%2039.93%2019.8376%2039.6666%2020.5007%2039.6666ZM37.1673%2039.6666C37.8304%2039.6666%2038.4662%2039.93%2038.9351%2040.3988C39.4039%2040.8677%2039.6673%2041.5035%2039.6673%2042.1666C39.6673%2042.8296%2039.4039%2043.4655%2038.9351%2043.9344C38.4662%2044.4032%2037.8304%2044.6666%2037.1673%2044.6666C36.5043%2044.6666%2035.8684%2044.4032%2035.3996%2043.9344C34.9307%2043.4655%2034.6673%2042.8296%2034.6673%2042.1666C34.6673%2041.5035%2034.9307%2040.8677%2035.3996%2040.3988C35.8684%2039.93%2036.5043%2039.6666%2037.1673%2039.6666ZM13.2307%2011.3333C14.4949%2011.3334%2015.7121%2011.8125%2016.6374%2012.674C17.5626%2013.5355%2018.1271%2014.7156%2018.2173%2015.9766L18.2423%2016.3333H41.004C41.4923%2016.3332%2041.9747%2016.4404%2042.417%2016.6473C42.8593%2016.8542%2043.2507%2017.1558%2043.5636%2017.5307C43.8765%2017.9056%2044.1032%2018.3447%2044.2277%2018.8169C44.3522%2019.2891%2044.3714%2019.7828%2044.284%2020.2633L41.5557%2035.2633C41.4159%2036.0313%2041.0111%2036.7259%2040.4116%2037.226C39.8122%2037.7262%2039.0563%2038%2038.2757%2037.9999H19.5523C18.7092%2037.9999%2017.8974%2037.6805%2017.2805%2037.1059C16.6635%2036.5313%2016.2872%2035.7442%2016.2273%2034.9033L14.894%2016.2149C14.864%2015.794%2014.6755%2015.4001%2014.3665%2015.1128C14.0575%2014.8254%2013.651%2014.6659%2013.229%2014.6666H13.0007C12.5586%2014.6666%2012.1347%2014.491%2011.8221%2014.1784C11.5096%2013.8659%2011.334%2013.4419%2011.334%2012.9999C11.334%2012.5579%2011.5096%2012.134%2011.8221%2011.8214C12.1347%2011.5088%2012.5586%2011.3333%2013.0007%2011.3333H13.2307ZM41.004%2019.6666H18.4807L19.5523%2034.6666H38.2757L41.004%2019.6666Z'%20fill='white'/%3e%3c/svg%3e"
+                  alt="question"
+                />
+              </div>
+              <p
+                class="text-center px-5 py-14 fs-8 bg-white rounded-2 mb-3 text-gray-950"
+              >
+                如何購買 Pizza 材料包？
+              </p>
+              <p
+                class="bg-secondary rounded-2 fs-8 px-5 pt-5 pb-51 lh-base text-gray-950"
+              >
+                進入官網首頁後，先選擇你想要的類別（如餅皮、醬料），加入購物車後依步驟結帳即可。
+              </p>
+            </div>
+            <div class="col-lg-4 col-12 mb-5">
+              <div class="text-center pb-3">
+                <img
+                  class="img-fluid"
+                  src="data:image/svg+xml,%3csvg%20width='56'%20height='56'%20viewBox='0%200%2056%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='56'%20height='56'%20rx='16'%20fill='%23B0332B'/%3e%3cpath%20d='M24.7956%2012.3564C25.359%2011.0898%2027.094%2011.0281%2027.774%2012.1664L27.8723%2012.3564L29.609%2016.2648C31.1254%2019.6763%2033.6473%2022.5435%2036.8373%2024.4831L37.374%2024.7981L40.4573%2026.5314C40.7024%2026.6686%2040.9093%2026.865%2041.0591%2027.1027C41.2089%2027.3403%2041.2968%2027.6117%2041.3149%2027.892C41.3329%2028.1724%2041.2806%2028.4528%2041.1625%2028.7077C41.0444%2028.9626%2040.8645%2029.1839%2040.639%2029.3514L40.459%2029.4681L37.374%2031.2014C34.1196%2033.032%2031.5018%2035.8127%2029.8706%2039.1714L29.609%2039.7348L27.8723%2043.6431C27.309%2044.9098%2025.574%2044.9714%2024.894%2043.8331L24.7956%2043.6431L23.059%2039.7348C21.5425%2036.3232%2019.0207%2033.456%2015.8306%2031.5164L15.294%2031.2014L12.2106%2029.4681C11.9655%2029.3309%2011.7587%2029.1345%2011.6089%2028.8968C11.4591%2028.6592%2011.3712%2028.3878%2011.3531%2028.1075C11.335%2027.8272%2011.3874%2027.5468%2011.5055%2027.2918C11.6235%2027.0369%2011.8035%2026.8156%2012.029%2026.6481L12.209%2026.5314L15.294%2024.7981C18.5483%2022.9675%2021.1662%2020.1869%2022.7973%2016.8281L23.059%2016.2648L24.7956%2012.3564ZM26.334%2017.1031C24.2607%2021.7698%2020.8573%2025.4931%2016.4006%2027.9998C20.8573%2030.5064%2024.2607%2034.2298%2026.334%2038.8964C28.414%2034.2181%2031.8173%2030.5031%2036.2673%2027.9998C31.8106%2025.4931%2028.4073%2021.7698%2026.334%2017.1031ZM40.034%2011.5364C40.862%2013.4154%2042.2734%2014.9776%2044.059%2015.9914C44.3256%2016.1414%2044.3256%2016.5248%2044.059%2016.6748C42.2729%2017.6895%2040.8614%2019.2529%2040.034%2021.1331C40.0023%2021.2039%2039.9509%2021.264%2039.8858%2021.3062C39.8207%2021.3483%2039.7449%2021.3708%2039.6673%2021.3708C39.5898%2021.3708%2039.5139%2021.3483%2039.4488%2021.3062C39.3838%2021.264%2039.3323%2021.2039%2039.3007%2021.1331C38.4729%2019.2535%2037.0615%2017.6907%2035.2757%2016.6764C35.2154%2016.642%2035.1653%2016.5923%2035.1304%2016.5323C35.0955%2016.4723%2035.0772%2016.4042%2035.0772%2016.3348C35.0772%2016.2654%2035.0955%2016.1972%2035.1304%2016.1372C35.1653%2016.0772%2035.2154%2016.0275%2035.2757%2015.9931C37.062%2014.9779%2038.4735%2013.4139%2039.3007%2011.5331C39.3323%2011.4623%2039.3838%2011.4022%2039.4488%2011.36C39.5139%2011.3179%2039.5898%2011.2954%2039.6673%2011.2954C39.7449%2011.2954%2039.8207%2011.3179%2039.8858%2011.36C39.9509%2011.4022%2040.0023%2011.4623%2040.034%2011.5331V11.5364Z'%20fill='white'/%3e%3c/svg%3e"
+                  alt="question-02"
+                />
+              </div>
+              <p
+                class="text-center px-5 py-14 fs-8 bg-white rounded-2 mb-3 text-gray-950"
+              >
+                可以製作專屬於我的 Pizza 嗎？
+              </p>
+              <p
+                class="bg-secondary rounded-2 fs-8 px-5 pt-5 pb-51 lh-base text-gray-950"
+              >
+                當然可以！我們提供 客製化 Pizza
+                材料包服務，可依照喜好自由搭配餅皮、醬料與配料。
+              </p>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="text-center pb-3">
+                <img
+                  class="img-fluid"
+                  src="/Ferment-at-home/assets/question-03-CuIEkoaZ.svg"
+                  alt="question"
+                />
+              </div>
+              <p
+                class="text-center px-5 py-14 fs-8 bg-white rounded-2 mb-3 text-gray-950"
+              >
+                Pizza 材料應該如何保存？
+              </p>
+              <p
+                class="bg-secondary rounded-2 fs-8 px-5 py-5 lh-base text-gray-950"
+              >
+                餅皮冷凍保存、醬料與配料冷藏保存，起司依種類需冷凍或冷藏，並於建議期限內使用完畢。
+              </p>
+            </div>
+          </div>
+        </div>
+        <figure class="overflow-hidden">
+          <img src="/Ferment-at-home/assets/curved%20line-BEPZnaPL.svg" alt="" />
+        </figure>
+      </section>
+      <!-- 第一個下拉是選單(之後可能要討論一下樣式，設計稿的rwd跟桌機板，有點矛盾) -->
+      <section>
+        <div class="container">
+          <div
+            class="row justify-content-center justify-content-lg-between flex-column flex-lg-row mt-11 mb-5"
+          >
+            <div class="col-lg-3 col-12">
+              <ul class="nav nav-underline gap-1 flex-column" role="tablist">
+                <!--mb-lg-0 mb-4  -->
+                <li
+                  class="nav-item dashed-to-solid text-lg-start text-center mb-lg-0 mb-4"
+                  role="presentation"
+                >
+                  <button
+                    class="border-0 active bg-gray-50 text-color text-font lh-base"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="home-pane"
+                    aria-selected="true"
+                  >
+                    <span class="me-2"
+                      ><img
+                        src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M22.1673%204.66675C23.0956%204.66675%2023.9858%205.0355%2024.6422%205.69187C25.2986%206.34825%2025.6673%207.23849%2025.6673%208.16675V19.8334C25.6673%2020.7617%2025.2986%2021.6519%2024.6422%2022.3083C23.9858%2022.9647%2023.0956%2023.3334%2022.1673%2023.3334H5.83398C4.90573%2023.3334%204.01549%2022.9647%203.35911%2022.3083C2.70273%2021.6519%202.33398%2020.7617%202.33398%2019.8334V8.16675C2.33398%207.23849%202.70273%206.34825%203.35911%205.69187C4.01549%205.0355%204.90573%204.66675%205.83398%204.66675H22.1673ZM23.334%2011.6667H4.66732V19.8334C4.66736%2020.1192%204.77227%2020.395%204.96215%2020.6085C5.15204%2020.8221%205.41369%2020.9585%205.69748%2020.9919L5.83398%2021.0001H22.1673C22.4531%2021%2022.7289%2020.8951%2022.9424%2020.7052C23.156%2020.5154%2023.2924%2020.2537%2023.3258%2019.9699L23.334%2019.8334V11.6667ZM19.834%2015.1667C20.1313%2015.1671%2020.4174%2015.2809%2020.6336%2015.4851C20.8498%2015.6892%2020.9799%2015.9682%2020.9974%2016.265C21.0148%2016.5619%2020.9182%2016.8542%2020.7273%2017.0822C20.5365%2017.3102%2020.2658%2017.4568%2019.9705%2017.4919L19.834%2017.5001H16.334C16.0366%2017.4998%2015.7506%2017.3859%2015.5344%2017.1818C15.3182%2016.9776%2015.188%2016.6986%2015.1706%2016.4018C15.1532%2016.1049%2015.2498%2015.8126%2015.4406%2015.5846C15.6315%2015.3566%2015.9022%2015.21%2016.1975%2015.1749L16.334%2015.1667H19.834ZM22.1673%207.00008H5.83398C5.52456%207.00008%205.22782%207.123%205.00903%207.34179C4.79023%207.56058%204.66732%207.85733%204.66732%208.16675V9.33342H23.334V8.16675C23.334%207.85733%2023.2111%207.56058%2022.9923%207.34179C22.7735%207.123%2022.4767%207.00008%2022.1673%207.00008Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                        alt="fqa-payment-icon" /></span
+                    >Payment & Orders
+                  </button>
+                </li>
+                <!--  d-lg-block d-none -->
+                <li
+                  class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none"
+                  role="presentation"
+                >
+                  <button
+                    class="border-0 bg-gray-50 text-color text-font lh-base"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile-pane"
+                    aria-selected="false"
+                  >
+                    <span class="me-2 drop-icon"
+                      ><img
+                        src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M21.4917%203.26309L21.942%203.32842C22.642%203.43925%2023.426%203.62475%2023.9078%204.10659C24.3909%204.58959%2024.5763%205.37359%2024.6872%206.07359L24.7525%206.52275C24.8995%207.58442%2024.938%208.97625%2024.6872%2010.5209C24.1925%2013.5694%2022.5697%2017.2059%2018.4945%2020.0234C18.4757%2020.2317%2018.4691%2020.4409%2018.4747%2020.6499L18.4945%2021.2834C18.5062%2021.7058%2018.4992%2022.1269%2018.3825%2022.5318C18.1608%2023.3018%2017.371%2023.8093%2016.6325%2024.1733L16.2708%2024.3448L15.8042%2024.5501L15.4857%2024.6784C14.6608%2024.9934%2013.6657%2025.2139%2013.0147%2024.5618C12.7195%2024.2666%2012.583%2023.8653%2012.4733%2023.4639L12.4197%2023.2633C12.233%2022.5551%2012.0218%2021.8516%2011.7582%2021.1702C11.6853%2021.2587%2011.6082%2021.3436%2011.5272%2021.4246C10.8913%2022.0592%2010.0292%2022.3789%209.16702%2022.6263L8.59418%2022.7838L8.02252%2022.9354L7.46485%2023.0754L6.96085%2023.1921L6.35768%2023.3204L5.98085%2023.3939C5.79286%2023.429%205.59916%2023.4178%205.4165%2023.3612C5.23383%2023.3046%205.0677%2023.2043%204.93248%2023.0691C4.79726%2022.9339%204.69702%2022.7678%204.64043%2022.5851C4.58384%2022.4024%204.5726%2022.2087%204.60768%2022.0208L4.73718%2021.3779L4.88768%2020.7036L5.03235%2020.1086L5.29485%2019.1228C5.55502%2018.1661%205.87118%2017.1803%206.57818%2016.4744L6.69368%2016.3636L5.80352%2016.0439L4.90868%2015.7359C4.38485%2015.5633%203.83418%2015.3813%203.45385%2015.0009C2.75852%2014.3056%203.05368%2013.2206%203.40018%2012.3678L3.59385%2011.9163L3.75368%2011.5651C4.12352%2010.7788%204.64852%209.87342%205.48385%209.63309C5.88868%209.51642%206.30868%209.50942%206.73218%209.51992L7.36568%209.54092C7.57568%209.54442%207.78568%209.54092%207.99218%209.52109C10.8085%205.44592%2014.4462%203.82309%2017.4947%203.32842C18.8166%203.11049%2020.1634%203.08848%2021.4917%203.26309ZM17.868%205.63142C15.3037%206.04792%2012.1875%207.42109%209.75618%2011.0786C9.46102%2011.5219%208.96285%2011.7331%208.45535%2011.8136C8.16835%2011.8603%207.87902%2011.8719%207.58852%2011.8719L6.71702%2011.8591C6.57235%2011.8591%206.42652%2011.8591%206.28185%2011.8661C5.92718%2012.3374%205.67985%2012.8974%205.49435%2013.4539L7.24435%2014.0898L7.96418%2014.3616C9.28018%2014.8773%2010.5542%2015.5014%2011.5342%2016.4814C13.185%2018.1323%2014.0238%2020.2918%2014.6305%2022.4979C15.1625%2022.3113%2015.6968%2022.0733%2016.1495%2021.7338L16.1565%2021.2986L16.1437%2020.4283C16.1437%2020.1389%2016.1553%2019.8496%2016.202%2019.5603C16.2813%2019.0528%2016.4937%2018.5546%2016.937%2018.2594C20.5945%2015.8281%2021.9677%2012.7119%2022.3842%2010.1476C22.5942%208.85259%2022.5592%207.69525%2022.4414%206.84242C22.3961%206.4886%2022.3208%206.13927%2022.2162%205.79825C21.8751%205.69403%2021.5258%205.61909%2021.172%205.57425C20.0738%205.43188%2018.9606%205.45037%2017.868%205.63142ZM8.22668%2018.1241C7.81835%2018.6176%207.62818%2019.2651%207.47535%2019.9068L7.34935%2020.4528L7.28518%2020.7164L8.09485%2020.5263C8.73652%2020.3746%209.38518%2020.1821%209.87752%2019.7738C9.98583%2019.6654%2010.0717%2019.5367%2010.1303%2019.3951C10.1889%2019.2535%2010.2191%2019.1017%2010.219%2018.9485C10.2189%2018.7953%2010.1887%2018.6435%2010.13%2018.502C10.0713%2018.3604%209.98533%2018.2318%209.87693%2018.1235C9.76854%2018.0152%209.63987%2017.9293%209.49827%2017.8707C9.35668%2017.8121%209.20493%2017.782%209.05169%2017.782C8.89845%2017.7821%208.74672%2017.8123%208.60516%2017.871C8.46361%2017.9297%208.335%2018.0157%208.22668%2018.1241ZM14.8265%209.87575C15.0432%209.65904%2015.3004%209.48712%2015.5834%209.3698C15.8665%209.25249%2016.1699%209.19208%2016.4764%209.19203C16.7828%209.19197%2017.0862%209.25227%2017.3693%209.36949C17.6525%209.4867%2017.9097%209.65853%2018.1264%209.87517C18.3431%2010.0918%2018.5151%2010.349%2018.6324%2010.6321C18.7497%2010.9152%2018.8101%2011.2186%2018.8102%2011.525C18.8102%2011.8314%2018.7499%2012.1349%2018.6327%2012.418C18.5155%2012.7011%2018.3437%2012.9584%2018.127%2013.1751C17.6893%2013.6128%2017.0957%2013.8586%2016.4768%2013.8586C15.8578%2013.8586%2015.2642%2013.6128%2014.8265%2013.1751C14.3888%2012.7374%2014.143%2012.1438%2014.143%2011.5248C14.143%2010.9059%2014.3888%2010.3134%2014.8265%209.87575Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                        alt="fqa-rocket-icon" /></span
+                    >Shipping & Delivery
+                  </button>
+                </li>
+                <!-- d-lg-block d-none -->
+                <li
+                  class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none mb-lg-0 mb-3"
+                  role="presentation"
+                >
+                  <button
+                    class="border-0 bg-gray-50 text-color text-font lh-base"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#contact-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact-pane"
+                    aria-selected="false"
+                  >
+                    <span class="me-2 drop-icon"
+                      ><img
+                        src="data:image/svg+xml,%3csvg%20width='29'%20height='28'%20viewBox='0%200%2029%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M10.6115%202.33325C12.1748%202.33325%2013.5725%203.04259%2014.5%204.15792C14.9739%203.58636%2015.5682%203.12646%2016.2403%202.81105C16.9125%202.49564%2017.646%202.33249%2018.3885%202.33325H18.4667C19.2712%202.33325%2020.0427%202.65284%2020.6116%203.2217C21.1804%203.79056%2021.5%204.5621%2021.5%205.36659C21.5%205.94992%2021.374%206.50175%2021.15%206.99992H21.5C22.4283%206.99992%2023.3185%207.36867%2023.9749%208.02505C24.6313%208.68142%2025%209.57166%2025%2010.4999V20.9999C25%2021.9282%2024.6313%2022.8184%2023.9749%2023.4748C23.3185%2024.1312%2022.4283%2024.4999%2021.5%2024.4999H7.5C6.57174%2024.4999%205.6815%2024.1312%205.02513%2023.4748C4.36875%2022.8184%204%2021.9282%204%2020.9999V10.4999C4%209.57166%204.36875%208.68142%205.02513%208.02505C5.6815%207.36867%206.57174%206.99992%207.5%206.99992H7.85C7.626%206.50175%207.5%205.94992%207.5%205.36659C7.5%204.5621%207.81958%203.79056%208.38844%203.2217C8.9573%202.65284%209.72884%202.33325%2010.5333%202.33325H10.6115ZM22.6667%2016.3333H15.6667V22.1666H21.5C21.7858%2022.1665%2022.0616%2022.0616%2022.2751%2021.8718C22.4886%2021.6819%2022.6251%2021.4202%2022.6585%2021.1364L22.6667%2020.9999V16.3333ZM13.3333%2016.3333H6.33333V20.9999C6.33333%2021.3093%206.45625%2021.6061%206.67504%2021.8249C6.89383%2022.0437%207.19058%2022.1666%207.5%2022.1666H13.3333V16.3333ZM13.3333%209.33325H7.5C7.21424%209.33329%206.93844%209.4382%206.7249%209.62809C6.51136%209.81797%206.37493%2010.0796%206.3415%2010.3634L6.33333%2010.4999V13.9999H13.3333V9.33325ZM21.5%209.33325H15.6667V13.9999H22.6667V10.4999C22.6667%2010.1905%2022.5437%209.89375%2022.325%209.67496C22.1062%209.45617%2021.8094%209.33325%2021.5%209.33325ZM10.6115%204.66659H10.5333C10.3477%204.66659%2010.1696%204.74034%2010.0384%204.87161C9.90708%205.00289%209.83333%205.18094%209.83333%205.36659C9.83333%205.58108%209.87558%205.79347%209.95766%205.99164C10.0397%206.1898%2010.1601%206.36986%2010.3117%206.52153C10.618%206.82784%2011.0335%206.99992%2011.4667%206.99992H13.3053C13.2116%206.35198%2012.8877%205.75949%2012.3927%205.33096C11.8978%204.90244%2011.2662%204.66658%2010.6115%204.66659ZM18.4667%204.66659H18.3885C17.0818%204.66659%2015.991%205.58592%2015.7285%206.81325L15.6935%206.99992H17.5333C17.7478%206.99992%2017.9602%206.95767%2018.1584%206.87559C18.3565%206.79351%2018.5366%206.6732%2018.6883%206.52153C18.8399%206.36986%2018.9603%206.1898%2019.0423%205.99164C19.1244%205.79347%2019.1667%205.58108%2019.1667%205.36659C19.1666%205.20057%2019.1076%205.03998%2019.0001%204.91346C18.8926%204.78695%2018.7437%204.70276%2018.5798%204.67592L18.4667%204.66659Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                        alt="" /></span
+                    >Products & Gifts
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content col-12 col-lg-8">
+              <div
+                class="tab-pane fade show active"
+                id="home-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <div class="dropdown dropdown-push w-100 mb-5">
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        有哪些付款方式？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        訂單可以取消或延後嗎？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        如何開立發票？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="profile-pane"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+                tabindex="0"
+              >
+                <div class="dropdown dropdown-push w-100 mb-5">
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        有哪些配送方式可以選擇？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        商品何時會寄出？送達時間多久？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        如果收到的商品有問題怎麼辦？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact-pane"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+                tabindex="0"
+              >
+                <div class="dropdown dropdown-push w-100 mb-5">
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        想自己在家動手做，可以保持食材新鮮嗎？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt="q-plus"
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        如果想把料理包送給親友，可以加上禮物包裝嗎？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt="q-plus"
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        收到商品後需要如何保存？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt="q-plus"
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 第二個 -->
+      <section>
+        <div class="container d-lg-none d-block">
+          <div
+            class="row justify-content-center justify-content-lg-between flex-column flex-lg-row mb-5"
+          >
+            <div class="col-lg-3 col-12">
+              <ul class="nav nav-underline gap-1 flex-column" role="tablist">
+                <!--mb-lg-0 mb-4  -->
+                <li
+                  class="nav-item dashed-to-solid text-lg-start text-center mb-lg-0 mb-4"
+                  role="presentation"
+                >
+                  <button
+                    class="border-0 active bg-gray-50 text-color text-font lh-base"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="home-pane"
+                    aria-selected="true"
+                  >
+                    <span class="me-2"
+                      ><img
+                        src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M21.4917%203.26309L21.942%203.32842C22.642%203.43925%2023.426%203.62475%2023.9078%204.10659C24.3909%204.58959%2024.5763%205.37359%2024.6872%206.07359L24.7525%206.52275C24.8995%207.58442%2024.938%208.97625%2024.6872%2010.5209C24.1925%2013.5694%2022.5697%2017.2059%2018.4945%2020.0234C18.4757%2020.2317%2018.4691%2020.4409%2018.4747%2020.6499L18.4945%2021.2834C18.5062%2021.7058%2018.4992%2022.1269%2018.3825%2022.5318C18.1608%2023.3018%2017.371%2023.8093%2016.6325%2024.1733L16.2708%2024.3448L15.8042%2024.5501L15.4857%2024.6784C14.6608%2024.9934%2013.6657%2025.2139%2013.0147%2024.5618C12.7195%2024.2666%2012.583%2023.8653%2012.4733%2023.4639L12.4197%2023.2633C12.233%2022.5551%2012.0218%2021.8516%2011.7582%2021.1702C11.6853%2021.2587%2011.6082%2021.3436%2011.5272%2021.4246C10.8913%2022.0592%2010.0292%2022.3789%209.16702%2022.6263L8.59418%2022.7838L8.02252%2022.9354L7.46485%2023.0754L6.96085%2023.1921L6.35768%2023.3204L5.98085%2023.3939C5.79286%2023.429%205.59916%2023.4178%205.4165%2023.3612C5.23383%2023.3046%205.0677%2023.2043%204.93248%2023.0691C4.79726%2022.9339%204.69702%2022.7678%204.64043%2022.5851C4.58384%2022.4024%204.5726%2022.2087%204.60768%2022.0208L4.73718%2021.3779L4.88768%2020.7036L5.03235%2020.1086L5.29485%2019.1228C5.55502%2018.1661%205.87118%2017.1803%206.57818%2016.4744L6.69368%2016.3636L5.80352%2016.0439L4.90868%2015.7359C4.38485%2015.5633%203.83418%2015.3813%203.45385%2015.0009C2.75852%2014.3056%203.05368%2013.2206%203.40018%2012.3678L3.59385%2011.9163L3.75368%2011.5651C4.12352%2010.7788%204.64852%209.87342%205.48385%209.63309C5.88868%209.51642%206.30868%209.50942%206.73218%209.51992L7.36568%209.54092C7.57568%209.54442%207.78568%209.54092%207.99218%209.52109C10.8085%205.44592%2014.4462%203.82309%2017.4947%203.32842C18.8166%203.11049%2020.1634%203.08848%2021.4917%203.26309ZM17.868%205.63142C15.3037%206.04792%2012.1875%207.42109%209.75618%2011.0786C9.46102%2011.5219%208.96285%2011.7331%208.45535%2011.8136C8.16835%2011.8603%207.87902%2011.8719%207.58852%2011.8719L6.71702%2011.8591C6.57235%2011.8591%206.42652%2011.8591%206.28185%2011.8661C5.92718%2012.3374%205.67985%2012.8974%205.49435%2013.4539L7.24435%2014.0898L7.96418%2014.3616C9.28018%2014.8773%2010.5542%2015.5014%2011.5342%2016.4814C13.185%2018.1323%2014.0238%2020.2918%2014.6305%2022.4979C15.1625%2022.3113%2015.6968%2022.0733%2016.1495%2021.7338L16.1565%2021.2986L16.1437%2020.4283C16.1437%2020.1389%2016.1553%2019.8496%2016.202%2019.5603C16.2813%2019.0528%2016.4937%2018.5546%2016.937%2018.2594C20.5945%2015.8281%2021.9677%2012.7119%2022.3842%2010.1476C22.5942%208.85259%2022.5592%207.69525%2022.4414%206.84242C22.3961%206.4886%2022.3208%206.13927%2022.2162%205.79825C21.8751%205.69403%2021.5258%205.61909%2021.172%205.57425C20.0738%205.43188%2018.9606%205.45037%2017.868%205.63142ZM8.22668%2018.1241C7.81835%2018.6176%207.62818%2019.2651%207.47535%2019.9068L7.34935%2020.4528L7.28518%2020.7164L8.09485%2020.5263C8.73652%2020.3746%209.38518%2020.1821%209.87752%2019.7738C9.98583%2019.6654%2010.0717%2019.5367%2010.1303%2019.3951C10.1889%2019.2535%2010.2191%2019.1017%2010.219%2018.9485C10.2189%2018.7953%2010.1887%2018.6435%2010.13%2018.502C10.0713%2018.3604%209.98533%2018.2318%209.87693%2018.1235C9.76854%2018.0152%209.63987%2017.9293%209.49827%2017.8707C9.35668%2017.8121%209.20493%2017.782%209.05169%2017.782C8.89845%2017.7821%208.74672%2017.8123%208.60516%2017.871C8.46361%2017.9297%208.335%2018.0157%208.22668%2018.1241ZM14.8265%209.87575C15.0432%209.65904%2015.3004%209.48712%2015.5834%209.3698C15.8665%209.25249%2016.1699%209.19208%2016.4764%209.19203C16.7828%209.19197%2017.0862%209.25227%2017.3693%209.36949C17.6525%209.4867%2017.9097%209.65853%2018.1264%209.87517C18.3431%2010.0918%2018.5151%2010.349%2018.6324%2010.6321C18.7497%2010.9152%2018.8101%2011.2186%2018.8102%2011.525C18.8102%2011.8314%2018.7499%2012.1349%2018.6327%2012.418C18.5155%2012.7011%2018.3437%2012.9584%2018.127%2013.1751C17.6893%2013.6128%2017.0957%2013.8586%2016.4768%2013.8586C15.8578%2013.8586%2015.2642%2013.6128%2014.8265%2013.1751C14.3888%2012.7374%2014.143%2012.1438%2014.143%2011.5248C14.143%2010.9059%2014.3888%2010.3134%2014.8265%209.87575Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                        alt="fqa-payment-icon" /></span
+                    >Shipping & Delivery
+                  </button>
+                </li>
+                <!--  d-lg-block d-none -->
+                <li
+                  class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none"
+                  role="presentation"
+                >
+                  <button
+                    class="border-0 bg-gray-50 text-color text-font lh-base"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile-pane"
+                    aria-selected="false"
+                  >
+                    Shipping & Delivery
+                  </button>
+                </li>
+                <!-- d-lg-block d-none -->
+                <li
+                  class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none mb-lg-0 mb-3"
+                  role="presentation"
+                >
+                  <button
+                    class="border-0 bg-gray-50 text-color text-font lh-base"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#contact-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact-pane"
+                    aria-selected="false"
+                  >
+                    Products & Gifts
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content col-12 col-lg-8">
+              <div class="tab-pane fade show active">
+                <div class="dropdown dropdown-push w-100 mb-5">
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        有哪些配送方式可以選擇？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        商品何時會寄出？送達時間多久？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        如果收到的商品有問題怎麼辦？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 第三個 -->
+      <section>
+        <div class="container d-lg-none d-block">
+          <div
+            class="row justify-content-center justify-content-lg-between flex-column flex-lg-row mb-lg-5"
+          >
+            <div class="col-lg-3 col-12">
+              <ul class="nav nav-underline gap-1 flex-column" role="tablist">
+                <!--mb-lg-0 mb-4  -->
+                <li
+                  class="nav-item dashed-to-solid text-lg-start text-center mb-lg-0 mb-4"
+                  role="presentation"
+                >
+                  <button
+                    class="border-0 active bg-gray-50 text-color text-font lh-base"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="home-pane"
+                    aria-selected="true"
+                  >
+                    <span class="me-2"
+                      ><img
+                        src="data:image/svg+xml,%3csvg%20width='29'%20height='28'%20viewBox='0%200%2029%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M10.6115%202.33325C12.1748%202.33325%2013.5725%203.04259%2014.5%204.15792C14.9739%203.58636%2015.5682%203.12646%2016.2403%202.81105C16.9125%202.49564%2017.646%202.33249%2018.3885%202.33325H18.4667C19.2712%202.33325%2020.0427%202.65284%2020.6116%203.2217C21.1804%203.79056%2021.5%204.5621%2021.5%205.36659C21.5%205.94992%2021.374%206.50175%2021.15%206.99992H21.5C22.4283%206.99992%2023.3185%207.36867%2023.9749%208.02505C24.6313%208.68142%2025%209.57166%2025%2010.4999V20.9999C25%2021.9282%2024.6313%2022.8184%2023.9749%2023.4748C23.3185%2024.1312%2022.4283%2024.4999%2021.5%2024.4999H7.5C6.57174%2024.4999%205.6815%2024.1312%205.02513%2023.4748C4.36875%2022.8184%204%2021.9282%204%2020.9999V10.4999C4%209.57166%204.36875%208.68142%205.02513%208.02505C5.6815%207.36867%206.57174%206.99992%207.5%206.99992H7.85C7.626%206.50175%207.5%205.94992%207.5%205.36659C7.5%204.5621%207.81958%203.79056%208.38844%203.2217C8.9573%202.65284%209.72884%202.33325%2010.5333%202.33325H10.6115ZM22.6667%2016.3333H15.6667V22.1666H21.5C21.7858%2022.1665%2022.0616%2022.0616%2022.2751%2021.8718C22.4886%2021.6819%2022.6251%2021.4202%2022.6585%2021.1364L22.6667%2020.9999V16.3333ZM13.3333%2016.3333H6.33333V20.9999C6.33333%2021.3093%206.45625%2021.6061%206.67504%2021.8249C6.89383%2022.0437%207.19058%2022.1666%207.5%2022.1666H13.3333V16.3333ZM13.3333%209.33325H7.5C7.21424%209.33329%206.93844%209.4382%206.7249%209.62809C6.51136%209.81797%206.37493%2010.0796%206.3415%2010.3634L6.33333%2010.4999V13.9999H13.3333V9.33325ZM21.5%209.33325H15.6667V13.9999H22.6667V10.4999C22.6667%2010.1905%2022.5437%209.89375%2022.325%209.67496C22.1062%209.45617%2021.8094%209.33325%2021.5%209.33325ZM10.6115%204.66659H10.5333C10.3477%204.66659%2010.1696%204.74034%2010.0384%204.87161C9.90708%205.00289%209.83333%205.18094%209.83333%205.36659C9.83333%205.58108%209.87558%205.79347%209.95766%205.99164C10.0397%206.1898%2010.1601%206.36986%2010.3117%206.52153C10.618%206.82784%2011.0335%206.99992%2011.4667%206.99992H13.3053C13.2116%206.35198%2012.8877%205.75949%2012.3927%205.33096C11.8978%204.90244%2011.2662%204.66658%2010.6115%204.66659ZM18.4667%204.66659H18.3885C17.0818%204.66659%2015.991%205.58592%2015.7285%206.81325L15.6935%206.99992H17.5333C17.7478%206.99992%2017.9602%206.95767%2018.1584%206.87559C18.3565%206.79351%2018.5366%206.6732%2018.6883%206.52153C18.8399%206.36986%2018.9603%206.1898%2019.0423%205.99164C19.1244%205.79347%2019.1667%205.58108%2019.1667%205.36659C19.1666%205.20057%2019.1076%205.03998%2019.0001%204.91346C18.8926%204.78695%2018.7437%204.70276%2018.5798%204.67592L18.4667%204.66659Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                        alt="fqa-payment-icon" /></span
+                    >Products & Gifts
+                  </button>
+                </li>
+                <!--  d-lg-block d-none -->
+                <li
+                  class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none"
+                  role="presentation"
+                >
+                  <button
+                    class="border-0 bg-gray-50 text-color text-font lh-base"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile-pane"
+                    aria-selected="false"
+                  >
+                    Shipping & Delivery
+                  </button>
+                </li>
+                <!-- d-lg-block d-none -->
+                <li
+                  class="nav-item dashed-to-solid text-lg-start text-center d-lg-block d-none mb-lg-0 mb-3"
+                  role="presentation"
+                >
+                  <button
+                    class="border-0 bg-gray-50 text-color text-font lh-base"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#contact-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact-pane"
+                    aria-selected="false"
+                  >
+                    Products & Gifts
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content col-12 col-lg-8">
+              <div class="tab-pane fade show active">
+                <div class="dropdown dropdown-push w-100">
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom text-start mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        想自己在家動手做，可以保持食材新鮮嗎？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom text-start mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        如果想把料理包送給親友，可以加上禮物包裝嗎？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <div class="d-lg-block d-none">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPUSURBVHgB5Zu/TyJREMdnlzW5QhNLrcRE64PW+AM7tfIKbf3Rm/gfqN1152nvj9rmzkLt5KKFnVytydFpdxRWGuDm+8ISeLLsAvOe7N4nQZ7LAvtl5s2beQwORSSXyw2Xy+VlHs45jpOpVqtpHg+THUr8nkV+zwLf513X/ZnP50tRnuiEncDC0pVKZZtffI3sCYrCydvb297d3V2x3UmBAmExFrbDwrapj2GL7rNF94Is2lIgrMbueM3DNMWDIltzvpU1Xf3A1NRUJmbiQHpgYOAa164/0GTBGFpO550lmywYc3FAWRLxwz9QFzg7O/uN4i3OB1F/x/9HuWjNNf9QgmBXHYerKguyuF1KGJ7nqeXNqWUofyl5lFKp1LhbS7+SyPDr6+uyx4McGWRwcJCmp6dpcnJSjcHz8zM9PDzQ4+OjGpuCLTjncSr2mdMdkiaTydDGxgZls9m2511eXtLx8bERoSgKnJmZGcw/sSQaVoKwlZWVjp4HkbgJU0qNjY19JSEg7uDggPhDo06BpUdGRuj29pYE+eSSIFtbWzQxMUHdsri4qF5DEjGBmHO4wF6Ba+O1pPBIiKA59/LyQmdnZyqY+IEEVsaHEfQcuHihUCAJEGSqJMDFxUV9GfCBuM3NzcAICUthzurg/NXVVZJAdA7q3NzctA3/sNL9/f274wg2UogJhBs2AutFCfs4zyRicxBinp6eaGlpSV300dFR6OKNDKfVkoIMRwoxgeDq6krdwghLBpDGSSEqMAr+WqcHpEYkMxprArE0QFhYbiqdl1oRGLQc6PiJtyRWBGK+hWEo2bYjcHR0NPAxrIWwrmTkbMR6kPHBUgJhUaJuLxjNZNoBi5kWBz5MoC2sCER01EFybgNU9LtkGL/0GRoaIt7pUtHy/PycbCBWLvUriZ+DVpYJ5J1IrBcWFtTygAhqaqtQx7iLQhxKJ72IhThU+6brQeMuinqvVYWOY53unXaDcYFwyyB62WKMinGBpl0wDAiM1FDTLdh46uYxIUouf/lSJIMg39Q3pACyG9O5KLqjPP7zm8dyW8ktODw8VNuDfjUPy0lt7LZDtX5xlFvnsXyl2Qew8dZd/pLwBxmehx8FmvZc9HixKU8peZxAm1omPM/bp4SBTkTcK4GsFL2Y3ykhQIvfzlVf6NmKu3xXpPhTrGlR1AXCXzngzFO8RapmvMbe0aZUDa5aLpe/UDxFqmvXe0b/v4ZYAEuyu2bjEHhwjbjWoN7tSE3ptWa9Neof0IV/yhtY+103pes0/KwgV+uOSpPFnxWgKOD3RAL7C9lX1J8V/AMjqd4vmGIfKQAAAABJRU5ErkJggg=="
+                        alt="dropdown-question-01"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <button
+                        class="btn btn-white d-flex justify-content-between w-100 dropdown-toggle-custom mb-3 px-5 py-14 text-primary-hover fs-8"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        data-plus-src="../assets/images/q-plus.svg"
+                        data-minus-src="../assets/images/q-minus.svg"
+                      >
+                        收到商品後需要如何保存？
+                        <span
+                          ><img
+                            class="toggle-icon"
+                            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M11%2020C11%2020.2652%2011.1054%2020.5196%2011.2929%2020.7071C11.4804%2020.8946%2011.7348%2021%2012%2021C12.2652%2021%2012.5196%2020.8946%2012.7071%2020.7071C12.8946%2020.5196%2013%2020.2652%2013%2020V13H20C20.2652%2013%2020.5196%2012.8946%2020.7071%2012.7071C20.8946%2012.5196%2021%2012.2652%2021%2012C21%2011.7348%2020.8946%2011.4804%2020.7071%2011.2929C20.5196%2011.1054%2020.2652%2011%2020%2011H13V4C13%203.73478%2012.8946%203.48043%2012.7071%203.29289C12.5196%203.10536%2012.2652%203%2012%203C11.7348%203%2011.4804%203.10536%2011.2929%203.29289C11.1054%203.48043%2011%203.73478%2011%204V11H4C3.73478%2011%203.48043%2011.1054%203.29289%2011.2929C3.10536%2011.4804%203%2011.7348%203%2012C3%2012.2652%203.10536%2012.5196%203.29289%2012.7071C3.48043%2012.8946%203.73478%2013%204%2013H11V20Z'%20fill='%23B0332B'/%3e%3c/svg%3e"
+                            alt=""
+                          />
+                        </span>
+                      </button>
+                      <div
+                        class="dropdown-menu w-100 border-0 p-5 bg-secondary mb-4"
+                      >
+                        <p class="fs-8">目前提供以下三種付款方式：</p>
+                        <ol class="add-decimal w-100 fs-8">
+                          <li>
+                            貨到付款
+                            <ul class="add-disc">
+                              <li>訂購成功後，待收到包裹時再直接付款。</li>
+                            </ul>
+                          </li>
+                          <li>
+                            信用卡付款（VISA、MasterCard、JCB）
+                            <ul class="add-disc">
+                              <li>
+                                在結帳頁面選擇「信用卡付款」，輸入卡片相關資訊即可完成付款。
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            銀行轉帳
+                            <ul class="add-disc">
+                              <li>
+                                訂單確認後，系統會提供一組銀行帳號，請於 3
+                                日內完成匯款，以確保訂單執行。
+                              </li>
+                              <li>若逾期未付款，訂單可能會自動取消。</li>
+                            </ul>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid bg-primary py-8 rounded-top-5">
+  <div class="container text-center">
+    <img src="data:image/png;base64,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" alt="logo" class="mb-5" />
+    <ul class="list-unstyled d-flex justify-content-center mb-0">
+      <li class="me-5">
+        <a
+          href="./products.html"
+          class="link-white lh-sm footer-link d-block fw-bold"
+          >商品列表</a
+        >
+      </li>
+      <li class="me-5">
+        <a href="#" class="link-white lh-sm footer-link d-block fw-bold"
+          >品牌故事</a
+        >
+      </li>
+      <li>
+        <a
+          href="./fqa.html"
+          class="link-white lh-sm footer-link d-block fw-bold"
+          >常見問題</a
+        >
+      </li>
+    </ul>
+    <p class="text-white fs-10 fs-sm-9">
+      © 2025 Ferment at Home Inc. All Rights Reserved.
+    </p>
+    <ul class="list-unstyled d-flex justify-content-center mb-0">
+      <li class="me-5">
+        <a href="#" class="link-white lh-sm footer-link d-block fw-bold"
+          >隱私權政策</a
+        >
+      </li>
+      <li>
+        <a href="#" class="link-white lh-sm footer-link d-block fw-bold"
+          >使用者條款</a
+        >
+      </li>
+    </ul>
+  </div>
+</footer>
+    <script>
+      document.querySelectorAll(".dropdown-toggle-custom").forEach((button) => {
+        let isPlus = true;
+
+        button.addEventListener("click", function () {
+          const icon = this.querySelector(".toggle-icon");
+          const plusSrc = this.dataset.plusSrc;
+          const minusSrc = this.dataset.minusSrc;
+
+          isPlus = !isPlus;
+          if (isPlus) {
+            icon.src = plusSrc;
+          } else {
+            icon.src = minusSrc;
+          }
+        });
+      });
+
+      // 當下拉選單關閉時，重置圖標
+      document.querySelector(".dropdown").forEach((dropdown) => {
+        dropdown.addEventListener("hidden.bs.dropdown", function () {
+          const button = this.querySelector(".dropdown-toggle-custom");
+          const icon = button.querySelector(".toggle-icon");
+          const plusSrc = button.dataset.plusSrc;
+
+          icon.src = plusSrc;
+
+          // 重置 isPlus 狀態（這需要存在按鈕的 data 屬性中）
+          button.isPlusState = true;
+        });
+      });
+    </script>
+  </body>
+</html>
