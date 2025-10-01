@@ -242,3 +242,24 @@
   background-size: contain;
   background-position: center center;
 }
+
+.index-top-btn {
+  position: absolute;
+  bottom: 32px;
+  right: 16px;
+  z-index: 10;
+
+  width: 48px;
+  height: 48px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .index-top-btn {
+    bottom: 61px;
+    right: 48px;
+
+    width: 64px;
+    height: 64px;
+  }
+}
