@@ -33,7 +33,11 @@
         color: $primary;
     }
 
-    &ativer {
+    &:active {
+        color: $primary;
+    }
+
+    &:focus-within {
         color: $primary;
     }
 }
